@@ -1,0 +1,18 @@
+.wrapper {
+    height: 50vh;
+}
+
+.donate {
+    width: 600px;
+    padding: 40px;
+    height: min-content;
+    border-radius: 5px;
+    background-color: rgba(224, 224, 224, 0.986);
+}
+
+.DonationBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
