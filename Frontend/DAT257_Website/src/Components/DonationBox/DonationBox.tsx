@@ -3,6 +3,7 @@ import "./DonationBox.css";
 function DonationBox() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [isAnonymous, setIsAnonymous] = useState(Boolean);
   const [email, setEmail] = useState("");
   const [donationAmount, setDonationAmount] = useState("");
   const [cardNumber, setCardNumber] = useState("");
@@ -14,6 +15,7 @@ function DonationBox() {
     const donationData = {
       firstName,
       lastName,
+      isAnonymous,
       email,
       donationAmount,
       cardNumber,
@@ -58,6 +60,18 @@ function DonationBox() {
                   onChange={(e) => setLastName(e.target.value)}
                 ></input>
               </div>
+
+              <div className="col">
+                <div className="checkbox-lg">
+               <input className="form-check-input" type="checkbox" defaultChecked={false} onChange={(e) => setIsAnonymous(!isAnonymous)}></input>
+               </div>
+
+               <div className="anonymous-label">
+               <label className="form-check-label" htmlFor="flexCheckDefault"> Make me anonymous </label>
+               </div>
+              </div>
+
+
             </div>
 
             <div className="form-group row">
