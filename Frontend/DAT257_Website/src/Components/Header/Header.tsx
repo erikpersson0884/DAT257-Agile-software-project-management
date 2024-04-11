@@ -2,7 +2,7 @@ import "./Header.css";
 function Header(){
     let navList = ["Home", "Donate", "About", "Contact", "Login", "Register"];
     return(
-        <div className = "wrapper">
+        <div className = "wrapperHead">
             <div className = "logo">
                 {/* TODO: Fixa en logga */}
             </div>
