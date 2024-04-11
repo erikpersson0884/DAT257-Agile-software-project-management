@@ -9,31 +9,23 @@ import viteLogo from '/vite.svg'
 import 'bootstrap/dist/css/bootstrap.css';
 import DonationBox from "./Components/DonationBox/DonationBox";
 import Footer from "./Components/Footer/footer";
-import InformationPage from "./Components/InformationPages/InformationPage";
-
+import InformationPage from "./Components/InformationPage/InformationPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/information" element={<InformationPage/>}></Route>
-        <Route path="/*" element={<>
-          <DonationBox/> 
-          <Footer/>
-          </>
-          }>
+        <Route path="/home" element={<DonationBox/>}></Route>
 
-        <div className="DonationBox">
-          <DonationBox></DonationBox>
-        </div>
+      </Routes>
 
+      <>
         <footer className="myFooter">
           <Footer></Footer>
         </footer>
+      </>
 
-        </Route>
-
-      </Routes>
     </BrowserRouter>
   )
 }
