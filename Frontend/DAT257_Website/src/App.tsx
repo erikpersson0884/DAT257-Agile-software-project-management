@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.css';
+import "bootstrap/dist/css/bootstrap.css";
+import DonationBox from "./Components/DonationBox/DonationBox";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-
+      <div className="DonationBox">
+        <DonationBox></DonationBox>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
