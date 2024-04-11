@@ -1,0 +1,29 @@
+.wrapper {
+    height: 50vh;
+}
+
+.donate {
+    width: 650;
+    padding: 40px;
+    height: min-content;
+    border-radius: 5px;
+    background-color: rgba(224, 224, 224, 0.986);
+}
+
+.DonationBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.checkbox-lg {
+    scale: 2.4;
+    margin-left: 5.5rem;
+    margin-top: 1.8rem;
+}
+
+.anonymous-label {
+    margin-left: 2.7rem;
+    margin-top: -1.5rem;
+}
