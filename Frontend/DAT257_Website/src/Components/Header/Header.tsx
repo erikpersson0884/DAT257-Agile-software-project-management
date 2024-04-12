@@ -1,29 +1,28 @@
 import "./Header.css";
+import {Link} from "react-router-dom";
+
+
 function Header(){
-    let navList = ["Home", "Donate", "About", "Contact", "Login", "Register"];
+    let navList = ["home", "information"];
     return(
-        <div className = "wrapperHead">
-            <div className = "logo">
-                {/* TODO: Fixa en logga */}
+        <header>
+            <div className = "wrapperHead">
+
+                <img src="src/assets/react.svg" className="headerLogo"></img>
+
+                <div className = "nav">
+                    <ul className = "navList">
+                        {navList.map((item) => 
+                            <li className="divNavItemA">
+                                <Link to={"/"+item} >{item}</Link>
+                            </li>
+                        
+                        )}
+                        
+                    </ul>
+                </div>
             </div>
-            <div className = "nav">
-                <ul className = "navList">
-                    {navList.map((item) => 
-                    <li
-                        className = "navItem"
-                        key={item}
-                    >
-                        <div className = "divNavItem">
-                            <a className = "divNavItemA" href="#">
-                                {item}
-                            </a>
-                        </div>
-                    </li>
-                    )}
-                    
-                </ul>
-            </div>
-        </div>
+        </header>
     )
 }
 

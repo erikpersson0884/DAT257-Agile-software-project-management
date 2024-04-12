@@ -1,12 +1,13 @@
 // import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
-import "./footer.css";
+import "./Footer.css";
 import {Link } from "react-router-dom";
 
 function Footer() {
 
   return (
     <>
+        <footer>
             <img src='src/assets/goal-logo.png'></img>
             <div>
                 <h2>Sitemap</h2>
@@ -47,6 +48,7 @@ function Footer() {
 
                 </ul>
             </div>
+        </footer>
     </>
   );
 }
