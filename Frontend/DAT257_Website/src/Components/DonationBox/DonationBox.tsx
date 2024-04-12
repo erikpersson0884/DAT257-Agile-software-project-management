@@ -36,7 +36,7 @@ function DonationBox() {
 
   return (
     <>
-      <div className="wrapper">
+      <div className="wrapperDonationBox">
         <div className="donate rounded">
           <h2 className="mb-3"> Donate </h2>
           <form onSubmit={handleSubmit}>

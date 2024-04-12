@@ -1,4 +1,4 @@
-.wrapper {
+.wrapperDonationBox {
     height: 50vh;
 }
 
@@ -12,6 +12,7 @@
 
 .DonationBox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;

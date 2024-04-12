@@ -8,12 +8,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import 'bootstrap/dist/css/bootstrap.css';
 import DonationBox from "./Components/DonationBox/DonationBox";
+import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/footer";
 import InformationPage from "./Components/InformationPage/InformationPage";
 
 function App() {
   return (
     <BrowserRouter>
+      <header className = "Header">
+        <Header></Header>
+      </header>
       <Routes>
         <Route path="/information" element={<InformationPage/>}></Route>
         <Route path="/home" element={<DonationBox/>}></Route>
@@ -21,6 +25,7 @@ function App() {
       </Routes>
 
       <>
+      
         <footer className="myFooter">
           <Footer></Footer>
         </footer>
