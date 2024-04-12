@@ -1,10 +1,9 @@
 import { useState } from "react";
 import "./InformationPage.css";
-import image from "./PlaceHolder.png";
+import image from "/src/assets/PlaceHolder.png";
+
 
 function InformationCard() {
-
-
     return(
         <>
             <body>

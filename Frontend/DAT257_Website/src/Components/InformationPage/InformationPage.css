@@ -23,9 +23,9 @@ body {
 
 .infocard {
     background-color: #6c5327;
-    border-radius: 10px;
+    border-radius: 1rem;
     margin: 5%;
-    padding: 20pt;
+    padding: 2rem;
 
     box-shadow: 0pt 5pt 15pt rgba(0, 0, 0, 0.5);
 
