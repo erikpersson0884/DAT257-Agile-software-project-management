@@ -7,8 +7,9 @@ function Header(){
     return(
         <header>
             <div className = "wrapperHead">
-
-                <img src="src/assets/react.svg" className="headerLogo"></img>
+                <Link to="/">
+                    <img src="src/assets/logo.png" className="headerLogo"></img>
+                </Link>
 
                 <div className = "nav">
                     <ul className = "navList">
