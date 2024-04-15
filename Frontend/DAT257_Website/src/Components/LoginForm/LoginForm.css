@@ -1,19 +1,27 @@
-.wrapperLoginBox {
-    height: 60vh;
-    width: 60vh;
-    margin-inline: auto;
+.loginFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 17vw;
 }
 
 .LoginBox {
-    width: 60vh;
-    padding: 40px;
-    height: min-content;
+    padding: 20px;
     border-radius: 5px;
     background-color: rgba(224, 224, 224, 0.986);
 }
 
-.wrapperLoginForm form {
+.form-control {
+    width: 15vw;
+}
+
+.register-login-wrapper {
     display: flex;
-    gap: 10px;
-    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.register {
+    margin-right: 10vw;
 }
