@@ -12,8 +12,8 @@ function Footer() {
             <div>
                 <h2>Sitemap</h2>
                 <ul>
-                    <li>          
-                        <Link to="/home">Home</Link>
+                    <li>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
                         <Link to="/information">Information</Link>
