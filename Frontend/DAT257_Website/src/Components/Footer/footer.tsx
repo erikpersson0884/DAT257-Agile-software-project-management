@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import "./footer.css";
+import {Link } from "react-router-dom";
 
 function Footer() {
 
@@ -10,13 +11,12 @@ function Footer() {
             <div>
                 <h2>Sitemap</h2>
                 <ul>
-                    <li>Home</li>
-                    <li>News</li>
-                    <li>Events</li>
-                    <li>Projects</li>
-                    <li>Publications</li>
-                    <li>People</li>
-                    <li>Links</li>
+                    <li>          
+                        <Link to="/home">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/information">Information</Link>
+                    </li>
                 </ul>
             </div>
 
@@ -24,16 +24,16 @@ function Footer() {
                 <h2>Socials</h2>
                 <ul>
                     <li>
-                        <a href='instagram.com/...'>Facebook</a>
+                        <a href='https://www.instagram.com/...'>Facebook</a>
                     </li>
                     <li>
-                        <a href='instagram.com/...'>Linkedin</a>
+                        <a href='https://www.instagram.com/...'>Linkedin</a>
                     </li>
                     <li>
-                        <a href='instagram.com/...'>Instgram</a>
+                        <a href='https://www.instagram.com/...'>Instgram</a>
                     </li>
                     <li>
-                        <a href='instagram.com/...'>X</a>
+                        <a href='https://www.instagram.com/...'>X</a>
                     </li>
                 </ul>
             </div>
