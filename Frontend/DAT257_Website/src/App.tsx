@@ -9,6 +9,7 @@ import DonationBox from "./Components/DonationBox/DonationBox";
 import InformationPage from "./Components/InformationPage/InformationPage";
 import Footer from "./Components/Footer/Footer.tsx";
 import Header from "./Components/Header/Header.tsx";
+import LoginForm from "./Components/LoginForm/LoginForm.tsx";
 
 function App() {
     return (
