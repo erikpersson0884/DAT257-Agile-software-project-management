@@ -1,0 +1,35 @@
+bodyTopDonations {
+    background-color: #28231C;
+}
+
+.wrapperTopDonations {
+    padding-inline: 20%;
+    height: 100%;
+    width: 100%;
+}
+
+.colContainerTopDonations {
+    display: flex;
+    width: 100%;
+}
+
+.colTopDonations {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.cardTopDonations {
+    background-color: #DDA63A;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 2rem;
+
+    box-shadow: 0pt 5pt 15pt rgba(0, 0, 0, 0.5);
+
+    color: white;
+    font-weight: bold;
+    text-shadow: 0pt 2pt 3pt rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}   

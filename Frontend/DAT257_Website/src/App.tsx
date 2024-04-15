@@ -9,6 +9,7 @@ import Header from "./Components/Header/Header.tsx";
 import RegisterPage from "./Components/RegisterPage/RegisterPage.tsx";
 import { useState } from "react";
 import WebsiteFeature from "./Components/WebsiteFeature/WebsiteFeature.tsx"
+import TopDonations from "./Components/TopDonations/TopDonaitons.tsx";
 
 function App() {
   const [data, setData] = useState();
@@ -31,7 +32,8 @@ function App() {
               <WebsiteFeature/>
               <DonationBox />
               </>}></Route>
-        <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
+        <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>            
+        <Route path="/leaderboard" element={<TopDonations/>}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
