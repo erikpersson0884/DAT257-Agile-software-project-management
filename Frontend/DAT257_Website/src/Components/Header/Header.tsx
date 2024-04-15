@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 
 function Header(){
-    let navList = ["home", "information"];
+    let navList = ["information"];
     return(
         <header>
             <div className = "wrapperHead">
@@ -12,6 +12,10 @@ function Header(){
 
                 <div className = "nav">
                     <ul className = "navList">
+                        <li className="divNavItemA">
+                            <Link to="/">Home</Link>
+                        </li>
+
                         {navList.map((item) => 
                             <li className="divNavItemA">
                                 <Link to={"/"+item} >{item}</Link>
