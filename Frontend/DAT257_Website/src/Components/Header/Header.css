@@ -91,3 +91,18 @@
     height: 0.3rem;
     background-color: black;
 }
+
+.userLogo {
+    width: 60px;
+    height: 60px;
+    margin-left: 120vh;
+}
+
+.login_register {
+    margin-left: -5vh;
+    margin-top: 0vh;
+}
+
+.login_register_text {
+    margin-bottom: 0px;
+}

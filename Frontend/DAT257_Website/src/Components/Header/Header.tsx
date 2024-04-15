@@ -1,5 +1,6 @@
 import "./Header.css";
 import {Link} from "react-router-dom";
+import UserLogo from "./UserLogo";
 
 
 function Header(){
@@ -18,8 +19,10 @@ function Header(){
                             </li>
                         
                         )}
-                        
+                    <UserLogo></UserLogo>
                     </ul>
+
+
                 </div>
             </div>
         </header>
