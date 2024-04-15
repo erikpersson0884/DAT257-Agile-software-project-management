@@ -1,38 +1,29 @@
-import { useState } from 'react'
 import {
-  BrowserRouter,
-  Route,
-  Routes
+    BrowserRouter,
+    Route,
+    Routes
 } from "react-router-dom";
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import './App.css'; 
 import 'bootstrap/dist/css/bootstrap.css';
 import DonationBox from "./Components/DonationBox/DonationBox";
-import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/footer";
 import InformationPage from "./Components/InformationPage/InformationPage";
+import Footer from "./Components/Footer/Footer.tsx";
+import Header from "./Components/Header/Header.tsx";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <header className = "Header">
-        <Header></Header>
-      </header>
-      <Routes>
-        <Route path="/information" element={<InformationPage/>}></Route>
-        <Route path="/home" element={<DonationBox/>}></Route>
+    return (
+      <BrowserRouter>
+          <Header/>
+          <Routes>
+            <Route path="/information" element={<InformationPage/>}></Route>
+            <Route path="/home" element={<DonationBox/>}></Route>
 
-      </Routes>
+          </Routes>
 
-      <>
-      
-        <footer className="myFooter">
-          <Footer></Footer>
-        </footer>
-      </>
+          <Footer/>
 
-    </BrowserRouter>
-  )
+      </BrowserRouter>
+    )
 }
 
 export default App;
