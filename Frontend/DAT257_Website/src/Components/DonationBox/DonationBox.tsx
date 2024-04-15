@@ -65,8 +65,8 @@ function DonationBox() {
 
               <div className="col">
                 <div className="checkbox-lg">
-               <input className="form-check-input" type="checkbox" defaultChecked={false} onChange={(e) => setIsAnonymous(!isAnonymous)}></input>
-               </div>
+                  <input className="form-check-input" type="checkbox" defaultChecked={false} onChange={(e) => setIsAnonymous(!isAnonymous)}></input>
+                </div>
 
                <div className="anonymous-label">
                <label className="form-check-label" htmlFor="flexCheckDefault"> Make me anonymous </label>
@@ -100,15 +100,17 @@ function DonationBox() {
               </div>
             </div>
 
-            <div className="form-group">
-              <label htmlFor="cardNumber" className="form-label"></label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Card Number"
-                value={cardNumber}
-                onChange={(e) => setCardNumber(e.target.value)}
-              ></input>
+            <div className="form-group row">
+              <div className="col">
+                <label htmlFor="cardNumber" className="form-label"></label>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Card Number"
+                  value={cardNumber}
+                  onChange={(e) => setCardNumber(e.target.value)}
+                ></input>
+              </div>
             </div>
 
             <div className="form-group row">
