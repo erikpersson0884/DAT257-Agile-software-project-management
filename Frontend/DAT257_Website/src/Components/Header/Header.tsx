@@ -8,7 +8,7 @@ function Header(){
         <header>
             <div className = "wrapperHead">
 
-                <img src="src/assets/react.svg" className="headerLogo"></img>
+                <img src="src/assets/logo.png" className="headerLogo"></img>
 
                 <div className = "nav">
                     <ul className = "navList">
