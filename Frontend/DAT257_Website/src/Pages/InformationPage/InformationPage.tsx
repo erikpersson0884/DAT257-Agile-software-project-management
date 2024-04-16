@@ -1,13 +1,16 @@
 import { useState } from "react";
 import "./InformationPage.css";
 import image from "/src/assets/PlaceHolder.png";
-import LoginForm from "../LoginForm/LoginForm";
+import LoginForm from "../../Components/LoginForm/LoginForm";
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
 
 
 function InformationCard() {
     return(
         <>
             <body>
+                <Header></Header>
                 <div className="wrapperInformation">
                     <div className="col-container">
                         <div className="col">
@@ -89,6 +92,7 @@ function InformationCard() {
                     </div>
 
                 </div>
+                <Footer></Footer>
             </body>
         </>
     )
