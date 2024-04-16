@@ -95,14 +95,11 @@
 .userLogo {
     width: 60px;
     height: 60px;
-    margin-left:75vw;
+    margin-left:33vw;
 }
 
-.login_register {
-    margin-left: -5vh;
-    margin-top: 0vh;
-}
-
-.login_register_text {
-    margin-bottom: 0px;
+.loginFormContainer {
+    position: absolute;
+    right: 10px;
+    top: 3.4rem;
 }

@@ -1,10 +1,18 @@
-function UserLogo() {
+interface Props {
+    showLoginForm: boolean;
+    displayLoginForm: () => void;
+}
+
+function UserLogo({showLoginForm, displayLoginForm }: Props) {
+
+
 
     return (
         <>
-        <img className="userLogo" src="src/assets/user-logo.svg" alt=""></img>
-    
 
+        <div className="loginContainer">
+        <img onClick={displayLoginForm} className="userLogo" src="src/assets/user-logo.svg" alt="" style={{ cursor: 'pointer'}}></img>
+        </div>
         </>
     )
 }
