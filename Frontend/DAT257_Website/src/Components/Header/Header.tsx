@@ -16,11 +16,16 @@ function Header(){
     return(
         <header>
             <div className = "wrapperHead">
-
-                <img src="src/assets/react.svg" className="headerLogo"></img>
+                <Link to="/" className="logoLinkHeader">
+                    <img src="src/assets/logo.png" className="logoHeader"></img>
+                </Link>
 
                 <div className = "nav">
                     <ul className = "navList">
+                        <li className="divNavItemA">
+                            <Link to="/">Home</Link>
+                        </li>
+
                         {navList.map((item) => 
                             <li className="divNavItemA">
                                 <Link to={"/"+item} >{item}</Link>

@@ -8,7 +8,7 @@ function InformationCard() {
     return(
         <>
             <body>
-                <div className="wrapper">
+                <div className="wrapperInformation">
                     <div className="col-container">
                         <div className="col">
                             <div className="infocard">
