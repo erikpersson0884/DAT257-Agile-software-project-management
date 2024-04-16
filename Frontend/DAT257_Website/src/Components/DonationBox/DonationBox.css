@@ -1,13 +1,13 @@
 .wrapperDonationBox {
-    height: 50vh;
-    width: 55%;
+    display: flex;
+    justify-content: space-between;
+
     margin-inline: auto;
 }
 
 .donate {
     width: auto;
     padding: 40px;
-    height: min-content;
     border-radius: 5px;
     background-color: rgba(224, 224, 224, 0.986);
 }
@@ -21,26 +21,17 @@
 
 .wrapperDonationBox form {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     gap: 0.7rem;
 }
 
-.wrapperDonationBox .col {
-    height: 3rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0.5rem;
-}
-
 .wrapperDonationBox .form-check-input {
-    scale: 2;
+    scale: 3;
+    margin-top: 16px;
+    margin-left: 12px;
 }
 
-.wrapperDonationBox .label {
-    font-size: 1rem;
-}
 
 .wrapperDonationBox .form-group {
     display: flex;

@@ -40,8 +40,8 @@ function DonationBox() {
         <div className="donate rounded">
           <h2 className="mb-3"> Donate </h2>
           <form onSubmit={handleSubmit}>
-            <div className="form-group row">
-              <div className="col">
+            
+            <div className="form-group">
                 <label htmlFor="firstName" className="form-label"></label>
                 <input
                   type="text"
@@ -50,9 +50,7 @@ function DonationBox() {
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                 ></input>
-              </div>
 
-              <div className="col">
                 <label htmlFor="lastName" className="form-label"></label>
                 <input
                   type="text"
@@ -61,9 +59,7 @@ function DonationBox() {
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                 ></input>
-              </div>
 
-              <div className="col">
                 <div className="checkbox-lg">
                   <input className="form-check-input" type="checkbox" defaultChecked={false} onChange={(e) => setIsAnonymous(!isAnonymous)}></input>
                 </div>
@@ -71,13 +67,11 @@ function DonationBox() {
                <div className="anonymous-label">
                <label className="form-check-label" htmlFor="flexCheckDefault"> Make me anonymous </label>
                </div>
-              </div>
 
 
             </div>
 
-            <div className="form-group row">
-              <div className="col">
+            <div className="form-group">
                 <label htmlFor="email" className="form-label"></label>
                 <input
                   type="email"
@@ -86,9 +80,7 @@ function DonationBox() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 ></input>
-              </div>
 
-              <div className="col">
                 <label htmlFor="donationAmount" className="form-label"></label>
                 <input
                   type="text"
@@ -98,10 +90,8 @@ function DonationBox() {
                   onChange={(e) => setDonationAmount(e.target.value)}
                 ></input>
               </div>
-            </div>
 
-            <div className="form-group row">
-              <div className="col">
+            <div className="form-group">
                 <label htmlFor="cardNumber" className="form-label"></label>
                 <input
                   type="text"
@@ -110,11 +100,9 @@ function DonationBox() {
                   value={cardNumber}
                   onChange={(e) => setCardNumber(e.target.value)}
                 ></input>
-              </div>
             </div>
 
-            <div className="form-group row">
-              <div className="col">
+            <div className="form-group">
                 <label htmlFor="expDate" className="form-label"></label>
                 <input
                   type="text"
@@ -123,9 +111,7 @@ function DonationBox() {
                   value={expDate}
                   onChange={(e) => setExpDate(e.target.value)}
                 ></input>
-              </div>
 
-              <div className="col mb-4">
                 <label htmlFor="cvcNumber" className="form-label"></label>
                 <input
                   type="text"
@@ -134,7 +120,6 @@ function DonationBox() {
                   value={cvcNumber}
                   onChange={(e) => setCvcNumber(e.target.value)}
                 ></input>
-              </div>
             </div>
 
             <button type="submit" className="btn btn-success py-3 w-100 mt-2">
