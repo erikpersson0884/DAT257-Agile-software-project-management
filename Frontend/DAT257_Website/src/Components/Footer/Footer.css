@@ -5,13 +5,11 @@ footer {
     padding: 20px 0;
     text-align: center;
     position: relative;
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
     bottom: 0;
-    width: 100%;
+    max-width: 100vw;
 }
 
 footer ul {
