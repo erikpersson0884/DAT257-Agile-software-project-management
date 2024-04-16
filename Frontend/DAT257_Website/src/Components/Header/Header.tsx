@@ -7,8 +7,9 @@ function Header(){
     return(
         <header>
             <div className = "wrapperHead">
-
-                <img src="src/assets/logo.png" className="headerLogo"></img>
+                <Link to="/" className="logoLinkHeader">
+                    <img src="src/assets/logo.png" className="logoHeader"></img>
+                </Link>
 
                 <div className = "nav">
                     <ul className = "navList">
