@@ -3,7 +3,8 @@ const app = express()
 const PORT = 8080
 
 app.get("/api/v1", (req, res) => {
-    res.json({ "users": ["one", "two"] })
+    //res.json({ "users": ["one", "two"] })
+    res.send("Hello")
 })
 
 app.listen(PORT, () => { console.log(`Server started on ${PORT}`) })

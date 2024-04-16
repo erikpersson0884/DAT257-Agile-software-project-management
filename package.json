@@ -2,5 +2,8 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"cd ./Backend && npm run server\" \"cd ./Frontend/DAT257_Website && npm run dev\""
   }
 }
