@@ -17,7 +17,9 @@ function LoginForm() {
     setPassword("");
   };
 
-  const handleRegister = () => {};
+
+  const handleRegister = () => {
+  };
 
   return (
     <>
@@ -43,8 +45,9 @@ function LoginForm() {
             ></input>
 
             <div className="register-login-wrapper">
-              <p className="register"> Register </p>
-              <button type="submit" className="btn btn-success py-2 w-40 mt-2">
+            <a href={"/register"}>
+      Register
+    </a>              <button type="submit" className="btn btn-success py-2 w-40 mt-2">
                 Login
               </button>
             </div>

@@ -87,7 +87,6 @@ function InformationCard() {
                             </div>
                         </div>
                     </div>
-                    <LoginForm></LoginForm>
 
                 </div>
             </body>

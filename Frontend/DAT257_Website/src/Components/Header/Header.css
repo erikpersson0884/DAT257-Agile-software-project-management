@@ -96,7 +96,7 @@ header {
 .userLogo {
     width: 60px;
     height: 60px;
-    margin-left:75vw;
+    margin-left:33vw;
 }
 
 .login_register {
@@ -106,4 +106,9 @@ header {
 
 .login_register_text {
     margin-bottom: 0px;
+}
+.loginFormContainer {
+    position: absolute;
+    right: 10px;
+    top: 3.4rem;
 }
