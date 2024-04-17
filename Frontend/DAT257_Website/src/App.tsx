@@ -33,10 +33,6 @@ function App() {
             <Route path="/" element={<DonationBox/>}></Route>
 
           </Routes>
-          <div>
-            
-            <p>Data : {data}</p>
-          </div>
           <Footer/>
 
       </BrowserRouter>
