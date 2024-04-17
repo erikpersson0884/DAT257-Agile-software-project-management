@@ -40,7 +40,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     gap: 4rem;
-    background-color:#DDA63A;
+    background-color: #DDA63A;
     height: 5rem;
     width: 100%;
     list-style: none;
@@ -84,19 +84,10 @@ header {
     transform: scaleX(1);
   }
 
-.reactedForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: black;
-}
-
 .userLogo {
-    width: 60px;
-    height: 60px;
-    margin-left:32vw;
+    width: 5rem;
+    height: 5rem;
+    margin-left: auto;
 }
 
 .login_register {
@@ -109,6 +100,6 @@ header {
 }
 .loginFormContainer {
     position: absolute;
-    right: 10px;
+    right: 0.9rem;
     top: 3.4rem;
 }

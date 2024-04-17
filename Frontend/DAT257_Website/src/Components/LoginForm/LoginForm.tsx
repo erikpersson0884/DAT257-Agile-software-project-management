@@ -27,27 +27,28 @@ function LoginForm() {
         <div className="LoginBox">
           <form onSubmit={handleSubmit}>
             <label htmlFor="email" className="form-label"></label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            ></input>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              ></input>
 
             <label htmlFor="password" className="form-label"></label>
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            ></input>
+              <input
+                type="password"
+                className="form-control"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              ></input>
 
-            <div className="register-login-wrapper">
-            <a href={"/register"}>
-      Register
-    </a>              <button type="submit" className="btn btn-success py-2 w-40 mt-2">
+            <div className="registerLoginWrapper">
+              <a href={"/register"}  className="registerLoginForm btn btn-register py-2 w-40 mt-2">
+                Register
+              </a>
+              <button type="submit" className="buttonLoginForm btn btn-success py-2 w-40 mt-2">
                 Login
               </button>
             </div>
