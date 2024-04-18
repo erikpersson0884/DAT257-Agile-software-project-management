@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./InformationPage.css";
 import image from "/src/assets/PlaceHolder.png";
+import LoginForm from "../LoginForm/LoginForm";
 
 
 function InformationCard() {
@@ -86,6 +87,7 @@ function InformationCard() {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </body>
         </>
