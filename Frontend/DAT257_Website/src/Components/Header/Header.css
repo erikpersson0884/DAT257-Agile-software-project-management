@@ -40,7 +40,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     gap: 4rem;
-    background-color:#DDA63A;
+    background-color: #DDA63A;
     height: 5rem;
     width: 100%;
     list-style: none;
@@ -83,3 +83,15 @@ header {
     transform-origin: left;
     transform: scaleX(1);
   }
+
+.userLogo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: auto;
+}
+
+.loginFormContainer {
+    position: absolute;
+    right: 0.9rem;
+    top: 3.4rem;
+}
