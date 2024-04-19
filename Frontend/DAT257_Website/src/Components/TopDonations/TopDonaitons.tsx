@@ -15,9 +15,6 @@ function TopDonations() {
         setIsRecentSelected(false);
     };
 
-    const recentDonationsButton = document.getElementById('recentDonations');
-    const topDonationsButton = document.getElementById('topDonations');
-
     return(
         <>
             <div className="bodyTopDonations">
@@ -54,6 +51,7 @@ function TopDonations() {
                                 <h1>50,000kr</h1>
                             </div>
                         </div>
+
                         <div className="cardTopDonations">
                             <div className="cardLogoTopDonations">
                                 <img src={image} className="cardimage" alt="PlaceHolder"></img>
@@ -70,6 +68,92 @@ function TopDonations() {
                                 <h1>20,000kr</h1>
                             </div>
                         </div>
+
+                        <div className="cardTopDonations">
+                            <div className="cardLogoTopDonations">
+                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
+                            </div>
+                            <div className="cardTextWrapperTopDonations">
+                                <h4>
+                                    #3
+                                </h4>
+                                <p>
+                                    David Lewis
+                                </p>
+                            </div>
+                            <div className="cardAmountTopDonation">
+                                <h1>12,345kr</h1>
+                            </div>
+                        </div>
+
+                        <div className="cardTopDonations">
+                            <div className="cardLogoTopDonations">
+                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
+                            </div>
+                            <div className="cardTextWrapperTopDonations">
+                                <h4>
+                                    #4
+                                </h4>
+                                <p>
+                                    Verylongname Alsoverylongsurname
+                                </p>
+                            </div>
+                            <div className="cardAmountTopDonation">
+                                <h1>10,000kr</h1>
+                            </div>
+                        </div>
+
+                        <div className="cardTopDonations">
+                            <div className="cardLogoTopDonations">
+                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
+                            </div>
+                            <div className="cardTextWrapperTopDonations">
+                                <h4>
+                                    #5
+                                </h4>
+                                <p>
+                                    Anonymous
+                                </p>
+                            </div>
+                            <div className="cardAmountTopDonation">
+                                <h1>9,999kr</h1>
+                            </div>
+                        </div>
+
+                        <div className="cardTopDonations">
+                            <div className="cardLogoTopDonations">
+                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
+                            </div>
+                            <div className="cardTextWrapperTopDonations">
+                                <h4>
+                                    #6
+                                </h4>
+                                <p>
+                                    Anonymous
+                                </p>
+                            </div>
+                            <div className="cardAmountTopDonation">
+                                <h1>9,998kr</h1>
+                            </div>
+                        </div>
+
+                        <div className="cardTopDonations">
+                            <div className="cardLogoTopDonations">
+                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
+                            </div>
+                            <div className="cardTextWrapperTopDonations">
+                                <h4>
+                                    #7
+                                </h4>
+                                <p>
+                                    Anonymous
+                                </p>
+                            </div>
+                            <div className="cardAmountTopDonation">
+                                <h1>9,000kr</h1>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
