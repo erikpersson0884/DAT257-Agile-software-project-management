@@ -1,9 +1,11 @@
-.wrapper {
+.wrapperDonationBox {
     height: 50vh;
+    width: 55%;
+    margin-inline: auto;
 }
 
 .donate {
-    width: 600px;
+    width: auto;
     padding: 40px;
     height: min-content;
     border-radius: 5px;
@@ -12,7 +14,36 @@
 
 .DonationBox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust as needed */
+}
+
+.wrapperDonationBox form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.wrapperDonationBox .col {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.wrapperDonationBox .form-check-input {
+    scale: 2;
+}
+
+.wrapperDonationBox .label {
+    font-size: 1rem;
+}
+
+.wrapperDonationBox .form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
 }

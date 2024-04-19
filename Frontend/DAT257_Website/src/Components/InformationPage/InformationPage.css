@@ -1,0 +1,43 @@
+body {
+    background-color: #28231C;
+}
+
+.wrapperInformation {
+    padding: 5%;
+    padding-inline: 20%;
+    height: 100%;
+    width: 100%;
+}
+
+.col-container {
+    display: flex;
+    width: 100%;
+}
+
+.col{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.infocard {
+    background-color: #6c5327;
+    border-radius: 1rem;
+    margin: 5%;
+    padding: 2rem;
+
+    box-shadow: 0pt 5pt 15pt rgba(0, 0, 0, 0.5);
+
+    color: white;
+    font-weight: bold;
+    text-shadow: 0pt 2pt 3pt rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}   
+
+.cardimage {
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;   
+}

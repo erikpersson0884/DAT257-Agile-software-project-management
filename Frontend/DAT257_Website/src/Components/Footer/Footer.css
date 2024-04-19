@@ -1,0 +1,26 @@
+
+
+footer {
+    background-color: grey;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    bottom: 0;
+    max-width: 100vw;
+}
+
+footer ul {
+    text-align: left;
+}
+
+footer img {
+    width: 15%;
+}
+
+
+footer a {
+    color: white;
+}
