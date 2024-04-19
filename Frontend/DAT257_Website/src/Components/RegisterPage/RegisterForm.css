@@ -1,0 +1,14 @@
+.registerFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: auto;
+}
+
+.registerFormBox {
+    width: min-content;
+    padding: 40px;
+    height: min-content;
+    border-radius: 5px;
+    background-color: rgba(224, 224, 224, 0.986);
+}
