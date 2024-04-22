@@ -2,40 +2,38 @@ import "./API.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-function App() {
+function API() {
   const url = "https://api.hungermapdata.org/v1/foodsecurity/country";
-  const [data, setData] = useState([]);
+  const [countryData, setCountry] = useState({});
+  const [metricsData, setMetrics] = useState({});
+  const randomInt = Math.round(Math.random() * 83)
 
-  const fetchInfo = () => {
-    return axios.get(url).then((res) => setData(res.data.countries));
+  const fetchCountry = () => {
+    return axios.get(url).then((res) => setCountry(res.data.countries[randomInt].country));
   };
 
+  const fetchMetrics = () => {
+    return axios.get(url).then((res) => setMetrics(res.data.countries[randomInt].metrics.fcs));
+  };
+
+  const doubleFetch = () => {
+    return fetchCountry(), fetchMetrics()
+  }
+
   useEffect(() => {
-    fetchInfo();
+    doubleFetch()
   }, []);
 
   return (
-    <div className="App">
-      <h1 style={{ color: "green" }}>using Axios Library to Fetch Data</h1>
-      <center>
-        {data.map((dataObj, index) => {
-          return (
-            <div
-              style={{
-                width: "15em",
-                backgroundColor: "#CD8FFD",
-                padding: 2,
-                borderRadius: 10,
-                marginBlock: 10,
-              }}
-            >
-              <p style={{ fontSize: 20, color: 'white' }}>{dataObj.country.name}</p>
-            </div>
-          );
-        })}
-      </center>
+    <div className="mainDivAPI">
+        <div className="countryInfoAPI">
+          <p className="countryNameAPI">Currently in {countryData.name}</p>
+          <p className="amountStarvingAPI">There are {metricsData.people} people starving</p>
+          <p className="percentageStarvingAPI">That is {Math.round(metricsData.prevalence * 100)}% of the countries population</p>
+
+        </div>
     </div>
   );
 }
 
-export default App;
+export default API;
