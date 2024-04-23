@@ -1,21 +1,18 @@
 .profileInfoContainer {
     display: flex;
+    justify-content: center;
 }
 
 .profileInfoBox {
-    width: min-content;
-    padding: 40px;
-    height: min-content;
-    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
     background-color: rgba(224, 224, 224, 0.986);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 30vw;
+    padding: 40px;
+    border-radius: 5px;
+
 }
 
 .profileInfo-h3 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    color: black;
 }

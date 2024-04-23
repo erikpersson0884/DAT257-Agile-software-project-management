@@ -30,7 +30,7 @@ function ProfilePageFetcher() {
   }, [userId]);
 
   return (
-    <ProfilePage userProfile={userProfile} /> // Removed unnecessary fragments
+    <ProfilePage userProfile={userProfile} />
   );
 }
 
