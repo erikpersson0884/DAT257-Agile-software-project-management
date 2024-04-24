@@ -1,7 +1,6 @@
 .wrapperDonationBox {
     display: flex;
     justify-content: space-between;
-
     margin-inline: auto;
 }
 
@@ -23,18 +22,45 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 0.7rem;
+    gap: 1rem;
 }
-
-.wrapperDonationBox .form-check-input {
-    scale: 3;
-    margin-top: 16px;
-    margin-left: 12px;
-}
-
 
 .wrapperDonationBox .form-group {
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 1/3rem;
+    width: 100%;
+}
+
+.wrapperDonationBox .form-check-input {
+    scale: 1;
+}
+
+.wrapperDonationBox .checkbox-lg {
+    margin-left: 1vw;
+}
+
+.wrapperDonationBox .form-control-full {
+    width: 100%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.wrapperDonationBox input[type="checkbox" i] {
+    padding: 0;
+    margin-right: 0.5rem;
 }
