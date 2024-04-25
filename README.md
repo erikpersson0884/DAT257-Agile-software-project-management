@@ -9,8 +9,9 @@
 -- Launch website --
 
 1. Make sure nodeJS is installed.
-2. Run "npm run dev" in website directory.
-3. Launch the provided link in browser
+2. Run "npm update" to install the needed dependencies.
+3. Run "npm start" in root directory.
+4. Launch the provided link in browser.
 
 Our github repo for the course DAT257 - Agile-software-project-management
 
