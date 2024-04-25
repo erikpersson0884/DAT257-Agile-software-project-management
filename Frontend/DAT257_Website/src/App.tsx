@@ -31,8 +31,9 @@ function App() {
           <Routes>
             <Route path="/information" element={<InformationPage/>}></Route>
             <Route path="/" element={<DonationBox/>}></Route>
-
+          
           </Routes>
+
           <Footer/>
 
       </BrowserRouter>
