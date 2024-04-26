@@ -13,18 +13,6 @@ import Header from "./Components/Header/Header.tsx";
 import { useState } from "react";
 
 function App() {
-    // const [data, setData] = useState();
-    // const urlProxy = "/api/v1"
-
-    
-    // axios
-    //   .get(urlProxy)
-    //   .then((res) => setData(res.data))
-    //   .catch((err) => {
-    //     console.error(err);
-    //   });
-    
-    
     return (
       <BrowserRouter>
           <Header/>

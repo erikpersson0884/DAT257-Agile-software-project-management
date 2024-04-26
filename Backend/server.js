@@ -5,6 +5,7 @@ import fs from 'fs';
 import authRouter from './authRouter.js';
 
 const app = express()
+app.use(express.json());
 
 
 dotenv.config();

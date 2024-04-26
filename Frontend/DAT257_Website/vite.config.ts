@@ -1,13 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+// Vite configuration with selective proxy for /api/ calls
 export default defineConfig({
   server: {
     proxy: {
-      "/api/v1": "http://localhost:8080/",
+      // Proxy all /api/v2/* calls to the specified address
+      "/api/": {
+        target: "http://localhost:8080/",
+        changeOrigin: true,
+      },
     },
   },
-
   plugins: [react()],
-})
+});

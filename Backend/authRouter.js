@@ -14,6 +14,7 @@ initialize_files([], [pathToUsersFile, pathToAdminKeysFile]);
 
 
 authRouter.post('/login', (req, res) => {
+    console.log(req.body)
     const email = req.body.email; // Extract name from request body
     const password = req.body.password; // Extract password from request body
 
