@@ -58,7 +58,7 @@ peopleRouter.post('/updatePerson', (req, res) => {
 
 	const personIndex = people.findIndex(person => person.id === req.body.userId);
 	
-	people[personIndex].username = req.body.username;
+	people[personIndex].name = req.body.name;
 	people[personIndex].password = req.body.password;
 	
 	if (userHasPermission(adminKey, "admin") && req.body.accountType) {
@@ -84,7 +84,7 @@ peopleRouter.post('/addPerson', (req, res) => {
 	people = JSON.parse(people);
 
 	let newPerson = {
-		username: req.body.username,
+		name: req.body.name,
 		password: req.body.password,
 		accountType: req.body.accountType,
 		id: Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)

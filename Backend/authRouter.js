@@ -1,25 +1,29 @@
 import { Router } from 'express';
 import fs from 'fs';
-
+import { initialize_files } from './server.js';
 
 const authRouter = Router();
 
-const pathToUsersFile = './data/users.json';
-const pathToAdminKeysFile = './data/adminKeys.json';
+const dataPath = "./data";
+const pathToUsersFile = dataPath + '/users.json';
+const pathToAdminKeysFile = dataPath + '/adminKeys.json';
 const lifeTimeForAdminKeys = 10 * 24 * 60 * 60 * 1000; // 10 days in milliseconds
 
 
+initialize_files([], [pathToUsersFile, pathToAdminKeysFile]);
+
+
 authRouter.post('/login', (req, res) => {
-    const username = req.body.username; // Extract username from request body
+    const email = req.body.email; // Extract name from request body
     const password = req.body.password; // Extract password from request body
 
     let users = fs.readFileSync(pathToUsersFile, 'utf8');
     users = JSON.parse(users); // Parse the JSON string into an object
 
 
-    if (credentialsIsValid(username, password)) {
+    if (credentialsIsValid(email, password)) {
         let adminKey = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-        const user = users.find(user => user.username === username && user.password === password);
+        const user = users.find(user => user.email === email && user.password === password);
         saveAdminKey(adminKey, user.id);
         res.status(200).json({ adminKey: adminKey, user: user }); // Send the content back to the client
     } else {
@@ -54,12 +58,12 @@ function saveAdminKey(adminKey, id) {
     fs.writeFileSync(pathToAdminKeysFile, JSON.stringify(adminKeys, null, 2));
 }
 
-function credentialsIsValid(username, pass) {
+function credentialsIsValid(email, password) {
     let userCredentials = fs.readFileSync(pathToUsersFile, 'utf8');
     userCredentials = JSON.parse(userCredentials); // Parse the JSON string into an object
 
     for (const user of userCredentials) {
-        if (user.username === username && user.password === pass) {
+        if (user.email === email && user.password === password) {
             return true;
         }
     }
@@ -97,7 +101,7 @@ export function getUserFromAdminKey(adminKey) {
         return null; // Admin key not found
     }
 
-    // Find the user with the same username as the admin key
+    // Find the user with the same name as the admin key
     let userCredentials = fs.readFileSync(pathToUsersFile, 'utf8');
     userCredentials = JSON.parse(userCredentials); // Parse the JSON string into an object
     const user = userCredentials.find(user => user.id === adminKeyData.id);
@@ -107,7 +111,7 @@ export function getUserFromAdminKey(adminKey) {
 
 export function getUsernameFromAdminKey(adminKey) {
     const user = getUserFromAdminKey(adminKey);
-    return user.username;
+    return user.name;
 }
 
 export function getAccountTypeFromAdminKey(adminKey) {
