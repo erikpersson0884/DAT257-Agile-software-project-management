@@ -27,10 +27,7 @@ function App() {
 
       <Routes>
         <Route path="/information" element={<InformationPage />}></Route>
-        <Route path="/" element={<> 
-              <WebsiteFeature/>
-              <DonationBox />
-              </>}></Route>
+        <Route path="/donate" element={<WebsiteFeature/>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
       </Routes>
       <Footer />
