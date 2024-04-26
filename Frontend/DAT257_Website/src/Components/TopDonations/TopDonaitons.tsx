@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./TopDonations.css";
 import image from "/src/assets/goal-logo.png";
+import LeaderboardCard from "./LeaderboardCard";
+
 
 
 function TopDonations() {
@@ -14,6 +16,78 @@ function TopDonations() {
     const handleTopClick = () => {
         setIsRecentSelected(false);
     };
+
+    const leaderboardData = [
+        {
+            image: image,
+            name: "David Lewis",
+            donationAmount: 100000,
+            date: new Date("2019-01-16")
+        },
+        {
+            image: image,
+            name: "David Albert",
+            donationAmount: 40000,
+            date: new Date("2019-01-16")
+        },
+        {
+            image: image,
+            name: "Verylong namethat istotesthowthislooks",
+            donationAmount: 30000,
+            date: new Date("2019-01-16")
+        },
+        {
+            image: image,
+            name: "David",
+            donationAmount: 25000,
+            date: new Date("2019-01-16")
+        },
+        {
+            image: image,
+            name: "pixeln",
+            donationAmount: 20000,
+            date: new Date("2019-01-16")
+        },
+        {
+            image: "/src/assets/goal-logo.png",
+            name: "RANGO BANGO KATAPULT TANGO",
+            donationAmount: 15000,
+            date: new Date("2019-01-16")
+        },
+        {
+            image: image,
+            name: "Erik Gökman",
+            donationAmount: 100600,
+            date: new Date("2019-01-16")
+        },   
+        {
+            image: image,
+            name: "Anton",
+            donationAmount: 8,
+            date: new Date("2019-01-16")
+        },   
+        {
+            image: image,
+            name: "ROLF JOHANSSON",
+            donationAmount: 2930,
+            date: new Date("2019-01-16")
+        },   
+        {
+            image: image,
+            name: "Albert",
+            donationAmount: 1273,
+            date: new Date("2019-01-16")
+        },   
+        {
+            image: image,
+            name: "Pelle",
+            donationAmount: 3872,
+            date: new Date("2019-01-16")
+        }   
+    ]
+
+    leaderboardData.sort((a, b) => b.donationAmount - a.donationAmount);
+    
 
     return(
         <>
@@ -35,125 +109,18 @@ function TopDonations() {
                         </div>
                     </div>
                     <div className="rowTopDonations">
-                        <div className="cardTopDonations">
-                            <div className="cardLogoTopDonations">
-                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
-                            </div>
-                            <div className="cardTextWrapperTopDonations">
-                                <h4>
-                                    #1
-                                </h4>
-                                <p>
-                                    Anonymous
-                                </p>
-                            </div>
-                            <div className="cardAmountTopDonation">
-                                <h1>50,000kr</h1>
-                            </div>
-                        </div>
-
-                        <div className="cardTopDonations">
-                            <div className="cardLogoTopDonations">
-                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
-                            </div>
-                            <div className="cardTextWrapperTopDonations">
-                                <h4>
-                                    #2
-                                </h4>
-                                <p>
-                                    Anonymous
-                                </p>
-                            </div>
-                            <div className="cardAmountTopDonation">
-                                <h1>20,000kr</h1>
-                            </div>
-                        </div>
-
-                        <div className="cardTopDonations">
-                            <div className="cardLogoTopDonations">
-                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
-                            </div>
-                            <div className="cardTextWrapperTopDonations">
-                                <h4>
-                                    #3
-                                </h4>
-                                <p>
-                                    David Lewis
-                                </p>
-                            </div>
-                            <div className="cardAmountTopDonation">
-                                <h1>12,345kr</h1>
-                            </div>
-                        </div>
-
-                        <div className="cardTopDonations">
-                            <div className="cardLogoTopDonations">
-                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
-                            </div>
-                            <div className="cardTextWrapperTopDonations">
-                                <h4>
-                                    #4
-                                </h4>
-                                <p>
-                                    Verylongname Alsoverylongsurname
-                                </p>
-                            </div>
-                            <div className="cardAmountTopDonation">
-                                <h1>10,000kr</h1>
-                            </div>
-                        </div>
-
-                        <div className="cardTopDonations">
-                            <div className="cardLogoTopDonations">
-                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
-                            </div>
-                            <div className="cardTextWrapperTopDonations">
-                                <h4>
-                                    #5
-                                </h4>
-                                <p>
-                                    Anonymous
-                                </p>
-                            </div>
-                            <div className="cardAmountTopDonation">
-                                <h1>9,999kr</h1>
-                            </div>
-                        </div>
-
-                        <div className="cardTopDonations">
-                            <div className="cardLogoTopDonations">
-                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
-                            </div>
-                            <div className="cardTextWrapperTopDonations">
-                                <h4>
-                                    #6
-                                </h4>
-                                <p>
-                                    Anonymous
-                                </p>
-                            </div>
-                            <div className="cardAmountTopDonation">
-                                <h1>9,998kr</h1>
-                            </div>
-                        </div>
-
-                        <div className="cardTopDonations">
-                            <div className="cardLogoTopDonations">
-                                <img src={image} className="cardimage" alt="PlaceHolder"></img>
-                            </div>
-                            <div className="cardTextWrapperTopDonations">
-                                <h4>
-                                    #7
-                                </h4>
-                                <p>
-                                    Anonymous
-                                </p>
-                            </div>
-                            <div className="cardAmountTopDonation">
-                                <h1>9,000kr</h1>
-                            </div>
-                        </div>
-
+                        {leaderboardData.map((item, index) => (
+                            <LeaderboardCard
+                                key={index}
+                                image={item.image}
+                                position={index + 1}
+                                name={item.name}
+                                donationAmount={item.donationAmount}
+                                date={item.date}
+                            />
+                        ))}
+                        
+                    
                     </div>
                 </div>
             </div>
