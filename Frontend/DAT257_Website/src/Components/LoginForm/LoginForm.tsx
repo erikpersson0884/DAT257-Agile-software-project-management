@@ -1,20 +1,32 @@
 import "./LoginForm.css";
 import { useState } from "react";
+import axios from "axios";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    const donationData = {
+    const loignData = {
       email,
       password,
     };
 
-    console.log(donationData);
+    console.log(loignData);
     setEmail("");
     setPassword("");
+  
+
+    axios
+      .post("/api/auth/login", loignData)
+      .then(response => {
+        console.log('Response data:', response.data);
+      })
+      .catch(error => {
+        console.error('Error sending POST request:', error);
+      });
   };
 
 
