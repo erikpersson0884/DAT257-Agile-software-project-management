@@ -7,6 +7,12 @@ import LoginForm from "../LoginForm/LoginForm";
 
 function Header(){
     let navList = ["information", "donate", "about", "contact", "leaderboard"];
+    const [showLoginForm, setShowLoginForm] = useState(false);
+
+    const displayLoginForm = () => {
+        setShowLoginForm(!showLoginForm);
+    };
+
     return(
         <header>
             <div className = "wrapperHead">
