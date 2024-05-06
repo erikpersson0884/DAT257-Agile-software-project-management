@@ -33,6 +33,12 @@ function LoginForm({showLoginForm, displayLoginForm }: Props) {
     }
   };
 
+  function logOut() {
+    localStorage.removeItem('adminKey');
+    setLoggedIn(false);
+    console.log('Logout successful');
+    displayLoginForm();
+  }
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -40,12 +46,8 @@ function LoginForm({showLoginForm, displayLoginForm }: Props) {
     setPassword("");
 
     if (loggedIn) {
-      localStorage.removeItem('adminKey');
-      setLoggedIn(false);
-      console.log('Logout successful');
-      displayLoginForm();
+      logOut();
       return;
-
     } else {
     const loignData = {
       email,
@@ -76,9 +78,22 @@ function LoginForm({showLoginForm, displayLoginForm }: Props) {
     }
   }
   
-
-  const handleRegister = () => {
-  };
+  const handleRemoveAccount = () => {
+    axios
+      .post("/api/people/removeUser", {adminKey: localStorage.getItem('adminKey')})
+      .then(response => {
+        console.log('Response data:', response.data);
+        if (response.status === 200) {
+          logOut();
+          displayLoginForm();
+        } else {
+          console.log('Failed to remove account');
+        }
+      })
+      .catch(error => {
+        console.error('Error sending POST request:', error);
+      });
+  }
 
   return (
     <>
@@ -104,9 +119,15 @@ function LoginForm({showLoginForm, displayLoginForm }: Props) {
               ></input>
 
             <div className="registerLoginWrapper">
-              <a href={"/register"}  className="registerLoginForm btn btn-register py-2 w-40 mt-2">
-                Register
-              </a>
+              {loggedIn ? (
+                <button type="button" className="buttonLoginForm btn btn-danger py-2 w-40 mt-2" onClick={handleRemoveAccount}>
+                  Remove Account
+                </button>
+              ) : (
+                <a href={"/register"}  className="registerLoginForm btn btn-register py-2 w-40 mt-2">
+                  Register
+                </a>
+              )}
 
               {loggedIn ? (
                 <button type="submit" className="buttonLoginForm btn btn-danger py-2 w-40 mt-2">Logout</button>

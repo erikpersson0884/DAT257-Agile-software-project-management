@@ -71,15 +71,15 @@ peopleRouter.post('/addUser', (req, res) => {
 });
 
 peopleRouter.post('/removeUser', (req, res) => {
-	if (!isAdminKeyValid(red.body.adminKey)) return res.status(403).send("Adminkey not valid");
-	if (getUserIdFromAdminKey(red.body.adminKey) !== red.body.user.id) return res.status(403).send("Adminkey does not match user requested to remove");
+	if (!isAdminKeyValid(req.body.adminKey)) return res.status(403).send("Adminkey not valid");
+	// if (getUserIdFromAdminKey(req.body.adminKey) !== req.body.user.id) return res.status(403).send("Adminkey does not match user requested to remove");
 
 	let people = fs.readFileSync(pathToUsersFile, 'utf8');
 	people = JSON.parse(people);
 
-	if (!people.find(user => user.id === req.body.id)) return res.status(404).send("user not found!");
+	if (!people.find(user => user.id === getUserIdFromAdminKey(req.body.adminKey))) return res.status(404).send("user not found!");
 
-	people = people.filter(user => user.id !== req.body.id);
+	people = people.filter(user => user.id !== getUserIdFromAdminKey(req.body.adminKey));
 
 	fs.writeFileSync(pathToUsersFile, JSON.stringify(people, null, 2), 'utf8');
 	res.status(200).send("user removed successfully!");
