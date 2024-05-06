@@ -16,12 +16,45 @@ function ProfilePage({ userProfile }: ProfilePageProps) {
   return (
     <>
       <div className="profileInfoBox">
-        <h3 className="profileInfo-h3">First name: {userProfile?.firstName}</h3>
-        <h3 className="profileInfo-h3">Last Name: {userProfile?.lastName}</h3>
-        <h3 className="profileInfo-h3">Email: {userProfile?.email}</h3>
+
+        <div className="labelSection">
+          <h3 className="labelText"> First Name: </h3>
+          <h3 className="labelText"> Last Name: </h3>
+          <h3 className="labelText"> Email: </h3>
+        </div>
+
+
+        <div className="textBoxSection">
+        <input
+                type="text"
+                className="form-control"
+                placeholder="First Name"
+                value={userProfile?.firstName}
+              ></input>
+
+        <input
+                type="text"
+                className="form-control"
+                placeholder="Last Name"
+                value={userProfile?.lastName}
+              ></input>
+
+        <input
+                type="email"
+                className="form-control"
+                placeholder="Email"
+                value={userProfile?.email}
+              ></input>
+
+
+        </div>
+
+
+
       </div>
     </>
   );
 }
 
 export default ProfilePage;
+

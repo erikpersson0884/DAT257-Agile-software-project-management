@@ -1,18 +1,34 @@
-.profileInfoContainer {
-    display: flex;
-    justify-content: center;
-}
+
 
 .profileInfoBox {
+    display: flex;
     text-align: center;
     margin: 10px;
     background-color: rgba(224, 224, 224, 0.986);
-    width: 30vw;
+    width: 50vw;
     padding: 40px;
     border-radius: 5px;
-
 }
+
+.labelSection {
+    flex-direction: row;
+}
+
+.textBoxSection {
+    flex-direction: row;
+}
+
 
 .profileInfo-h3 {
     color: black;
 }
+
+.labelText {
+    margin-top: 20px;
+}
+
+.form-control {
+    margin-top: 20px;
+}
+
+
