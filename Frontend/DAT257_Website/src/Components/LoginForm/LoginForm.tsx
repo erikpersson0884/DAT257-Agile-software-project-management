@@ -2,22 +2,58 @@ import "./LoginForm.css";
 import { useState } from "react";
 import axios from "axios";
 
-let adminKey;
+interface Props {
+  showLoginForm: boolean;
+  displayLoginForm: () => void;
+}
 
-function LoginForm() {
+function LoginForm({showLoginForm, displayLoginForm }: Props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  testAdminKey()
+
+  function testAdminKey() {
+    if (localStorage.getItem('adminKey') !== null) {
+      axios
+        .post("/api/auth/testAdminKey", {adminKey: localStorage.getItem('adminKey')})
+        .then(response => {
+          console.log('Response data:', response.data);
+          if (response.status === 200) {
+            console.log('Login successful');
+            setLoggedIn(true);
+          } else {
+            console.log('Login failed');
+          }
+        })
+        .catch(error => {
+          console.error('Error sending POST request:', error);
+        });
+    }
+  };
 
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    displayLoginForm();
+    setEmail("");
+    setPassword("");
+    if (loggedIn) {
+      localStorage.removeItem('adminKey');
+
+      setLoggedIn(false);
+      console.log('Logout successful');
+      return;
+
+    } else {
     const loignData = {
       email,
       password,
     };
 
-    setEmail("");
-    setPassword("");
+    // setEmail("");
+    // setPassword("");
   
     console.log(loignData);
 
@@ -26,9 +62,7 @@ function LoginForm() {
       .then(response => {
         console.log('Response data:', response.data);
         if (response.status === 200) {
-          console.log('Login successful');
-          adminKey = response.data.adminKey;
-          localStorage.setItem('adminKey', adminKey);
+          loginEvent(response.data.adminKey);
         } else {
           console.log('Login failed');
         }
@@ -36,8 +70,16 @@ function LoginForm() {
       .catch(error => {
         console.error('Error sending POST request:', error);
       });
-  };
+    }
+  }
+  
 
+  function loginEvent(adminKey: string) {
+    console.log('Login successful');
+    localStorage.setItem('adminKey', adminKey);
+
+    
+  }
 
   const handleRegister = () => {
   };
@@ -69,9 +111,12 @@ function LoginForm() {
               <a href={"/register"}  className="registerLoginForm btn btn-register py-2 w-40 mt-2">
                 Register
               </a>
-              <button type="submit" className="buttonLoginForm btn btn-success py-2 w-40 mt-2">
-                Login
-              </button>
+
+              {loggedIn ? (
+                <button type="submit" className="buttonLoginForm btn btn-danger py-2 w-40 mt-2">Logout</button>
+              ) : (
+                <button type="submit" className="buttonLoginForm btn btn-success py-2 w-40 mt-2">Login</button>
+              )}
             </div>
           </form>
         </div>

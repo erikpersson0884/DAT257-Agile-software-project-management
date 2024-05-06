@@ -38,7 +38,7 @@ function Header(){
                     </ul>
 
                     <div className="loginFormContainer">
-                    {showLoginForm && <LoginForm></LoginForm>}
+                    {showLoginForm && <LoginForm showLoginForm={showLoginForm} displayLoginForm={displayLoginForm}></LoginForm>}
                     </div>
                 </div>
             </div>
