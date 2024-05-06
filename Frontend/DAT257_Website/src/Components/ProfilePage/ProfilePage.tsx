@@ -21,6 +21,11 @@ function ProfilePage({ userProfile }: ProfilePageProps) {
           <h3 className="labelText"> First Name: </h3>
           <h3 className="labelText"> Last Name: </h3>
           <h3 className="labelText"> Email: </h3>
+
+          <button type="submit" className="buttonLoginForm btn btn-success py-2 w-40 mt-2">
+                Change Password
+              </button>
+
         </div>
 
 
@@ -48,6 +53,8 @@ function ProfilePage({ userProfile }: ProfilePageProps) {
 
 
         </div>
+
+
 
 
 
