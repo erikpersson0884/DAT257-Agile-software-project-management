@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 
 import authRouter from './authRouter.js';
-
+import peopleRouter from './peopleRouter.js';
 const app = express()
 app.use(express.json());
 
@@ -12,6 +12,7 @@ dotenv.config();
 const PORT = process.env.PORT || 8080;
 
 app.use("/api/auth", authRouter);
+app.use("/api/people", peopleRouter);
 
 export const dataPath = "./data";
 
