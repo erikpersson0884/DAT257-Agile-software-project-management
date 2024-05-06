@@ -4,8 +4,8 @@ import { initialize_files } from './server.js';
 
 const authRouter = Router();
 
-const dataPath = "./data";
-const pathToUsersFile = dataPath + '/users.json';
+export const dataPath = "./data";
+export const pathToUsersFile = dataPath + '/users.json';
 const pathToAdminKeysFile = dataPath + '/adminKeys.json';
 const lifeTimeForAdminKeys = 10 * 24 * 60 * 60 * 1000; // 10 days in milliseconds
 

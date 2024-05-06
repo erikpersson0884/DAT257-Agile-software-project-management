@@ -2,7 +2,8 @@ import { Router } from 'express';
 import fs from 'fs';
 
 
-import { isAdminKeyValid, userHasPermission, pathToUsersFile, getUserFromUserId, getUserIdFromAdminKey } from 'authRouter.js'
+import { isAdminKeyValid, userHasPermission, pathToUsersFile, getUserFromUserId, getUserIdFromAdminKey } from './authRouter.js'
+
 
 
 const peopleRouter = Router();
