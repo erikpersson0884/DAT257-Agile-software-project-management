@@ -36,14 +36,14 @@ function LoginForm({showLoginForm, displayLoginForm }: Props) {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    displayLoginForm();
     setEmail("");
     setPassword("");
+
     if (loggedIn) {
       localStorage.removeItem('adminKey');
-
       setLoggedIn(false);
       console.log('Logout successful');
+      displayLoginForm();
       return;
 
     } else {
@@ -62,7 +62,10 @@ function LoginForm({showLoginForm, displayLoginForm }: Props) {
       .then(response => {
         console.log('Response data:', response.data);
         if (response.status === 200) {
-          loginEvent(response.data.adminKey);
+          displayLoginForm();
+          console.log('Login successful');
+          localStorage.setItem('adminKey', response.data.adminKey);
+
         } else {
           console.log('Login failed');
         }
@@ -73,13 +76,6 @@ function LoginForm({showLoginForm, displayLoginForm }: Props) {
     }
   }
   
-
-  function loginEvent(adminKey: string) {
-    console.log('Login successful');
-    localStorage.setItem('adminKey', adminKey);
-
-    
-  }
 
   const handleRegister = () => {
   };

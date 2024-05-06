@@ -1,26 +1,38 @@
 import { useState } from "react";
 import "./RegisterForm.css";
+import axios from "axios";
 
 function RegisterForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [name, setname] = useState("");
+  const [surname, setsurname] = useState("");
 
   const handleRegister = (e: any) => {
     e.preventDefault();
     const registerData = {
       email,
       password,
-      firstName,
-      lastName,
+      name,
+      surname,
     };
+
+    axios
+      .post("/api/people/addUser", registerData)
+      .then((response) => {
+        console.log("Response data:", response.data);
+        if (response.status === 200) {
+          console.log("Register successful");
+        } else {
+          console.log("Register failed");
+        }
+      });
 
     console.log(registerData);
     setEmail("");
     setPassword("");
-    setFirstName("");
-    setLastName("");
+    setname("");
+    setsurname("");
   };
 
   return (
@@ -29,22 +41,22 @@ function RegisterForm() {
         <div className="registerFormBox">
           <h3> Register </h3>
           <form onSubmit={handleRegister}>
-            <label htmlFor="firstName" className="form-label"></label>
+            <label htmlFor="name" className="form-label"></label>
             <input
               type="text"
               className="form-control"
               placeholder="First name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
+              value={name}
+              onChange={(e) => setname(e.target.value)}
             ></input>
 
-            <label htmlFor="firstName" className="form-label"></label>
+            <label htmlFor="name" className="form-label"></label>
             <input
               type="text"
               className="form-control"
               placeholder="Last name"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
+              value={surname}
+              onChange={(e) => setsurname(e.target.value)}
             ></input>
 
             <label htmlFor="email" className="form-label"></label>

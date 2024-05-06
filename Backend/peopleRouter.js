@@ -54,11 +54,13 @@ peopleRouter.post('/updateUser', (req, res) => {
 peopleRouter.post('/addUser', (req, res) => {
 	let people = fs.readFileSync(pathToUsersFile, 'utf8');
 	people = JSON.parse(people);
+	if (req.body.email === "" || req.body.password === "") return res.status(400).send("email and password are required");
 
 	let newUser = {
 		name: req.body.name,
-		password: req.body.password,
+		surname: req.body.surname,
 		email: req.body.email,
+		password: req.body.password,
 		accountType: "user",
 		id: Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
 	};
