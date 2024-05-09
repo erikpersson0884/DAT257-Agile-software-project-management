@@ -16,20 +16,20 @@ function CountryStatisticsAPI() {
   };
 
   useEffect(() => {
-    //fetchMetrics();
+    fetchMetrics();
     fetchCountry();
   }, []);
 
   return (
     <div className="mainDivCAPI">
         {countryData.map((countryData, index) => {
+            return(<div className="countryInfoCAPI"><p className="countryNameCAPI">{countryData.country.name}</p></div>)
+        })}
+        {metricsData.map((metricsData, index) => {
             return(
-            <div className="countryInfoCAPI">
-                <p className="countryNameCAPI">{countryData.country.name}</p>
-                <div className="countryStatisticsCAPI">
-                    <p className="amountStarvingCAPI">There are {Intl.NumberFormat('fr-FR').format(countryData.metrics.fcs.people)} people starving</p>
-                    <p className="percentageStarvingCAPI">That is {Math.round(countryData.metrics.fcs.prevalence * 100)}% of the countries population</p>
-                </div>
+            <div className="countryStatisticsCAPI">
+            <p className="amountStarvingCAPI">There are {Intl.NumberFormat('fr-FR').format(metricsData.people)} people starving</p>
+            <p className="percentageStarvingCAPI">That is {Math.round(metricsData.prevalence * 100)}% of the countries population</p>
             </div>
             )
         })}
