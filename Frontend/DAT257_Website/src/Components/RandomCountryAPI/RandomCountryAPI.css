@@ -1,11 +1,11 @@
-.mainDivAPI{
+.mainDivRAPI{
     width: 70vw;
     height: 250px;
     align-self: center;
     background-color: #DDA63A;
 }
 
-.countryInfoAPI{
+.countryInfoRAPI{
     width: 100%;
     height: 80%;
     border-radius: 25px;
@@ -13,28 +13,28 @@
     text-align: center;
 }
 
-.countryNameAPI{
+.countryNameRAPI{
     color: black;
     font-size: 40px;
     padding-top: 10px;
 }
 
-.amountStarvingAPI{
+.amountStarvingRAPI{
     font-size: 25px;
 }
 
-.percentageStarvingAPI{
+.percentageStarvingRAPI{
     font-size: 25px;
 }
 
-.buttonAPI{
+.buttonRAPI{
     background: none;
     border: none;
     outline: none;
     box-shadow: none;
 }
 
-.buttonDivAPI{
+.buttonDivRAPI{
     position: relative;
     display: flex;
     justify-content: center;
@@ -47,12 +47,12 @@
     margin-left: auto;
 }
 
-.buttonDivAPI:hover{
+.buttonDivRAPI:hover{
     background-color: rgba(224, 224, 224, 0.986);
     transition: 0.2s ease-in-out;
 }
 
-.buttonImageAPI{
+.buttonImageRAPI{
     width: 25px;
     height: 25px;
     background: none;

@@ -21,12 +21,18 @@ function CountryStatisticsAPI() {
   }, []);
 
   return (
-    <div className="mainDivAPI">
-        <div className="countryInfoAPI">
-        {countryData.map((dataObj, index) => {
-            return(<div><p className="countryNameAPI">{dataObj.country.name}</p></div>)
+    <div className="mainDivCAPI">
+        {countryData.map((countryData, index) => {
+            return(
+            <div className="countryInfoCAPI">
+                <p className="countryNameCAPI">{countryData.country.name}</p>
+                <div className="countryStatisticsCAPI">
+                    <p className="amountStarvingCAPI">There are {Intl.NumberFormat('fr-FR').format(countryData.metrics.fcs.people)} people starving</p>
+                    <p className="percentageStarvingCAPI">That is {Math.round(countryData.metrics.fcs.prevalence * 100)}% of the countries population</p>
+                </div>
+            </div>
+            )
         })}
-        </div>
     </div>
   );
 }
