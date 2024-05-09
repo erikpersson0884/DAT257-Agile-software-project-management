@@ -9,6 +9,7 @@ import Header from "./Components/Header/Header.tsx";
 import RegisterPage from "./Components/RegisterPage/RegisterPage.tsx";
 import { useState } from "react";
 import WebsiteFeature from "./Components/WebsiteFeature/WebsiteFeature.tsx"
+import AboutPage from "./Components/AboutPage/AboutPage.tsx";
 
 function App() {
   const [data, setData] = useState();
@@ -31,6 +32,7 @@ function App() {
               <WebsiteFeature/>
               <DonationBox />
               </>}></Route>
+        <Route path="/about" element={<AboutPage></AboutPage>}> </Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
       </Routes>
       <Footer />
