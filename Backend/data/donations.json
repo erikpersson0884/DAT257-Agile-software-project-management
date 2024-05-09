@@ -1,68 +1,46 @@
 [
   {
-    "image": "/src/assets/goal-logo.png",
-    "name": "David Lewis",
+    "donationId": "123",
     "donationAmount": 100000,
     "date": "2019-01-16T00:00:00.000Z"
   },
   {
-    "image": "/src/assets/goal-logo.png",
-    "name": "David Albert",
-    "donationAmount": 40000,
-    "date": "2019-01-16T00:00:00.000Z"
+    "amount": "456",
+    "date": 1715288522470,
+    "user": {
+      "type": "registered",
+      "userId": "1"
+    }
   },
   {
-    "image": "/src/assets/goal-logo.png",
-    "name": "Verylong namethat istotesthowthislooks",
-    "donationAmount": 30000,
-    "date": "2019-01-16T00:00:00.000Z"
+    "amount": "600",
+    "date": 1715288633924,
+    "user": {
+      "type": "guest",
+      "firstname": "Erik",
+      "lastname": "Persson"
+    }
   },
   {
-    "image": "/src/assets/goal-logo.png",
-    "name": "David",
-    "donationAmount": 25000,
-    "date": "2019-01-16T00:00:00.000Z"
+    "amount": "9347859384759",
+    "date": 1715288651033,
+    "user": {
+      "type": "anonymous"
+    }
   },
   {
-    "image": "/src/assets/goal-logo.png",
-    "name": "pixeln",
-    "donationAmount": 20000,
-    "date": "2019-01-16T00:00:00.000Z"
+    "amount": "039458345",
+    "date": 1715288661482,
+    "user": {
+      "type": "anonymous"
+    }
   },
   {
-    "image": "/src/assets/goal-logo.png",
-    "name": "RANGO BANGO KATAPULT TANGO",
-    "donationAmount": 15000,
-    "date": "2019-01-16T00:00:00.000Z"
-  },
-  {
-    "image": "/src/assets/goal-logo.png",
-    "name": "Erik Gökman",
-    "donationAmount": 100600,
-    "date": "2019-01-16T00:00:00.000Z"
-  },
-  {
-    "image": "/src/assets/goal-logo.png",
-    "name": "Anton",
-    "donationAmount": 8,
-    "date": "2019-01-16T00:00:00.000Z"
-  },
-  {
-    "image": "/src/assets/goal-logo.png",
-    "name": "ROLF JOHANSSON",
-    "donationAmount": 2930,
-    "date": "2019-01-16T00:00:00.000Z"
-  },
-  {
-    "image": "/src/assets/goal-logo.png",
-    "name": "Albert",
-    "donationAmount": 1273,
-    "date": "2019-01-16T00:00:00.000Z"
-  },
-  {
-    "image": "/src/assets/goal-logo.png",
-    "name": "Pelle",
-    "donationAmount": 3872,
-    "date": "2019-01-16T00:00:00.000Z"
+    "amount": "44",
+    "date": 1715288671261,
+    "user": {
+      "type": "registered",
+      "userId": "1"
+    }
   }
 ]

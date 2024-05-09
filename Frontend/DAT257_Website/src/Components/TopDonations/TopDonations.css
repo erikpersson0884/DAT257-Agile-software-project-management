@@ -1,0 +1,129 @@
+bodyTopDonations {
+    background-color: #28231C;
+}
+
+.wrapperTopDonations {
+    padding-inline: 20%;
+    height: 100%;
+    width: 100%;
+}
+
+.titleTestTopDonations {
+    color:#DDA63A;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.sortingWrapperTopDonations {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.sortingContainerTopDonations {
+    width: fit-content;
+}
+
+.sortingRowTopDonations {
+    width: fit-content;
+    border-radius: 1.5rem;
+    background-color:#6c5327;   
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.sortingSelectedTopDonations {
+    background-color: #DDA63A;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.sortingSelectedTopDonations:hover {
+    cursor: pointer;
+}
+
+.sortingDeselectedTopDonations {
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    color:#DDA63A; 
+}
+.sortingDeselectedTopDonations:hover {
+    background-color: rgba(221, 166, 58, 0.3);
+    cursor: pointer;
+}
+
+.colContainerTopDonations {
+    display: flex;
+    width: 100%;
+}
+
+.rowTopDonations {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.cardTopDonations {
+    display: flex;
+    flex-direction: row;
+    background-color: #DDA63A;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-inline: 2rem;
+    margin-bottom: 1rem;
+    
+    box-shadow: 0pt 5pt 15pt rgba(0, 0, 0, 0.5);
+
+    color: white;
+    font-weight: bold;
+    text-shadow: 0pt 2pt 3pt rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}   
+
+.cardTextWrapperTopDonations {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.cardTextWrapperTopDonations h4, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cardAmountTopDonation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardAmountTopDonation h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cardLogoTopDonations {
+    width: 4rem;
+    align-content: center;
+    margin-right: 1rem;
+}
+
+.cardLogoTopDonations img {
+    box-shadow: 0pt 0pt 5pt #28231C;
+    border-radius: 1rem;
+}
+
+
