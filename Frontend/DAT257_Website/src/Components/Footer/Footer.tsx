@@ -25,16 +25,16 @@ function Footer() {
                 <h2>Socials</h2>
                 <ul>
                     <li>
-                        <a href='https://www.instagram.com/...'>Facebook</a>
+                        <a href='https://www.facebook.com/'>Facebook</a>
                     </li>
                     <li>
-                        <a href='https://www.instagram.com/...'>Linkedin</a>
+                        <a href='https://www.linkedin.com/'>Linkedin</a>
                     </li>
                     <li>
-                        <a href='https://www.instagram.com/...'>Instgram</a>
+                        <a href='https://www.instagram.com/'>Instgram</a>
                     </li>
                     <li>
-                        <a href='https://www.instagram.com/...'>X</a>
+                        <a href='https://www.x.com/'>Twitter / X</a>
                     </li>
                 </ul>
             </div>
