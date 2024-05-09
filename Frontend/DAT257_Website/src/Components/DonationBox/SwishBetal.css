@@ -1,8 +1,9 @@
 .wrapperDonationBox form {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     gap: 1rem;
+    width: 50vw;
+    height: 50vh;
 }
 
 .wrapperDonationBox .form-group {
