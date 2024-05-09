@@ -77,7 +77,7 @@ function LoginForm({showLoginForm, displayLoginForm }: Props) {
       });
     }
   }
-  
+ 
   const handleRemoveAccount = () => {
     axios
       .post("/api/people/removeUser", {adminKey: localStorage.getItem('adminKey')})
