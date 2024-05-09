@@ -8,7 +8,7 @@ export default defineConfig({
     proxy: {
       // Proxy all /api/v2/* calls to the specified address
       "/api/": {
-        target: "http://localhost:8080/",
+        target: "http://localhost:3001/",
         changeOrigin: true,
       },
     },
