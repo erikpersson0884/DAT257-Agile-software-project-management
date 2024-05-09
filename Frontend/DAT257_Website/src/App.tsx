@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer.tsx";
 import Header from "./Components/Header/Header.tsx";
 import RegisterPage from "./Components/RegisterPage/RegisterPage.tsx";
 import { useState } from "react";
+import ProfilePageFetcher from "./Components/ProfilePage/ProfilePageFetcher.tsx";
 import WebsiteFeature from "./Components/WebsiteFeature/WebsiteFeature.tsx"
 
 function App() {
@@ -24,13 +25,15 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-
+      
       <Routes>
         <Route path="/information" element={<InformationPage />}></Route>
         <Route path="/donate" element={<DonationBox/>}></Route>
         <Route path="/" element={<WebsiteFeature/>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
+        <Route path="/profile" element={<ProfilePageFetcher />}></Route>
       </Routes>
+
       <Footer />
     </BrowserRouter>
   );
