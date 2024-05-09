@@ -1,0 +1,62 @@
+.mainDivAPI{
+    width: 70vw;
+    height: 250px;
+    align-self: center;
+    background-color: #DDA63A;
+}
+
+.countryInfoAPI{
+    width: 100%;
+    height: 80%;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+}
+
+.countryNameAPI{
+    color: black;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.amountStarvingAPI{
+    font-size: 25px;
+}
+
+.percentageStarvingAPI{
+    font-size: 25px;
+}
+
+.buttonAPI{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.buttonDivAPI{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 185px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.buttonDivAPI:hover{
+    background-color: rgba(224, 224, 224, 0.986);
+    transition: 0.2s ease-in-out;
+}
+
+.buttonImageAPI{
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}

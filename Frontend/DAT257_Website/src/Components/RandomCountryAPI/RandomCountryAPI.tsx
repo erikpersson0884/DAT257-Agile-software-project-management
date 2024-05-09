@@ -1,8 +1,8 @@
-import "./API.css";
-import React, { useState, useEffect } from "react";
+import "./RandomCountryAPI.css";
+import React, { useState, useEffect, } from "react";
 import axios from "axios";
 
-function API() {
+function RandomCountryAPI() {
   const url = "https://api.hungermapdata.org/v1/foodsecurity/country";
   const [countryData, setCountry] = useState({});
   const [metricsData, setMetrics] = useState({});
@@ -16,24 +16,23 @@ function API() {
     return axios.get(url).then((res) => setMetrics(res.data.countries[randomInt].metrics.fcs));
   };
 
-  const doubleFetch = () => {
-    return fetchCountry(), fetchMetrics()
-  }
-
   useEffect(() => {
-    doubleFetch()
+    fetchMetrics();
+    fetchCountry();
   }, []);
 
   return (
     <div className="mainDivAPI">
         <div className="countryInfoAPI">
           <p className="countryNameAPI">Currently in {countryData.name}</p>
-          <p className="amountStarvingAPI">There are {metricsData.people} people starving</p>
+          <p className="amountStarvingAPI">There are {Intl.NumberFormat('fr-FR').format(metricsData.people)} people starving</p>
           <p className="percentageStarvingAPI">That is {Math.round(metricsData.prevalence * 100)}% of the countries population</p>
-
+        </div>
+        <div className="buttonDivAPI">
+          <button className="buttonAPI">See more statistics &gt;&gt;</button>
         </div>
     </div>
   );
 }
 
-export default API;
+export default RandomCountryAPI;

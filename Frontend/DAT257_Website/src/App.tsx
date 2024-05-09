@@ -3,7 +3,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import DonationBox from "./Components/DonationBox/DonationBox";
-import API from "./Components/API/API";
+import RandomCountryAPI from "./Components/RandomCountryAPI/RandomCountryAPI.tsx";
+import CountryStatisticsAPI from "./Components/CountryStatisticsAPI/CountryStatisticsAPI.tsx";
 import InformationPage from "./Components/InformationPage/InformationPage";
 import Footer from "./Components/Footer/Footer.tsx";
 import Header from "./Components/Header/Header.tsx";
@@ -26,7 +27,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/information" element={<InformationPage />}></Route>
-        <Route path="/" element={<DonationBox />}></Route>
+        <Route path="/" element={<><RandomCountryAPI/><CountryStatisticsAPI/><DonationBox/></>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
       </Routes>
       <Footer />
