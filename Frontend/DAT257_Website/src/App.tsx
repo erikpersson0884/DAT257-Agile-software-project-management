@@ -31,9 +31,11 @@ function App() {
         <Route path="/information" element={<InformationPage />}></Route>
         <Route path="/" element={<> 
               <WebsiteFeature/>
-              <DonationBox />
+              <RandomCountryAPI/>
+              <DonationBox/>
               </>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
+        <Route path="/Statistics" element={<CountryStatisticsAPI></CountryStatisticsAPI>}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
