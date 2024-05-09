@@ -36,18 +36,17 @@
 }
 
 .buttonDivRandom-API{
-    position: relative;
     display: flex;
     justify-content: center;
     background-color: white;
     padding: 5px;
     border-radius: 10px;
-    width: 185px;
-    height: 40px;
-    margin-right: 10px;
+    width: 12vw;
+    height: auto;
+    margin-right: 1vw;
     margin-left: auto;
+    bottom: 10px;
 }
-
 .buttonDivRandom-API:hover{
     background-color: rgba(224, 224, 224, 0.986);
     transition: 0.2s ease-in-out;
