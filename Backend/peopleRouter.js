@@ -62,7 +62,7 @@ peopleRouter.post('/addUser', (req, res) => {
 		email: req.body.email,
 		password: req.body.password,
 		accountType: "user",
-		id: Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+		id: Date.now() + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
 	};
 
 	people.push(newUser);
