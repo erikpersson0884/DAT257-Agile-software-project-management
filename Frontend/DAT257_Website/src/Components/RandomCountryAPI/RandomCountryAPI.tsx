@@ -29,7 +29,7 @@ function RandomCountryAPI() {
           <p className="percentageStarvingRandom-API">That represents {Math.round(metricsData.prevalence * 100)}% of the countries population</p>
         </div>
         <div className="buttonDivRandom-API">
-          <button className="buttonRandom-API">See more statistics &gt;&gt;</button>
+          <a href="/statistics"><button className="buttonRandom-API">See more statistics &gt;&gt;</button></a>
         </div>
     </div>
   );
