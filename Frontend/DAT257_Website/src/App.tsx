@@ -32,8 +32,8 @@ function App() {
         <Route path="/" element={<> 
               <WebsiteFeature/>
               <RandomCountryAPI/>
-              <DonationBox/>
               </>}></Route>
+        <Route path="/donate" element={<DonationBox/>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
       </Routes>
       <Footer />
