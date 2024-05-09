@@ -28,11 +28,9 @@ function App() {
 
       <Routes>
         <Route path="/information" element={<InformationPage />}></Route>
-        <Route path="/" element={<> 
-              <WebsiteFeature/>
-              <DonationBox />
-              </>}></Route>
-        <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>            
+        <Route path="/donate" element={<DonationBox/>}></Route>
+        <Route path="/" element={<WebsiteFeature/>}></Route>
+        <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
         <Route path="/leaderboard" element={<TopDonations/>}></Route>
       </Routes>
       <Footer />
