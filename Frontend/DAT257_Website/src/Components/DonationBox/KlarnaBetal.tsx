@@ -42,11 +42,11 @@ function KlarnaBetal() {
             </div>
 
             <div className="form-group">
-                <label htmlFor="cardNumber" className="form-label"></label>
+                <label htmlFor="donationAmount" className="form-label"></label>
                 <input
                 type="text"
                 className="form-control-full"
-                placeholder="Card Number"
+                placeholder="Donation Amount $"
                 value={donationAmount}
                 onChange={(e) => setDonationAmount(e.target.value)}
                 ></input>

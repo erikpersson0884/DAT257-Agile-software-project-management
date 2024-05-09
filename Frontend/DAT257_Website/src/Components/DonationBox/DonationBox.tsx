@@ -1,6 +1,7 @@
 import "./DonationBox.css";
 import KortBetal from "./KortBetal";
 import KlarnaBetal from "./KlarnaBetal";
+import SwishBetal from "./SwishBetal";
 
 function DonationBox() {
   return (
@@ -10,9 +11,12 @@ function DonationBox() {
           <h2 className="mb-3"> Donate </h2>
             {/* <KortBetal>
             </KortBetal> */}
-            <KlarnaBetal>
+            {/* <KlarnaBetal>
               
-            </KlarnaBetal>
+            </KlarnaBetal> */}
+            <SwishBetal>
+
+            </SwishBetal>
         </div>
       </div>
     </>
