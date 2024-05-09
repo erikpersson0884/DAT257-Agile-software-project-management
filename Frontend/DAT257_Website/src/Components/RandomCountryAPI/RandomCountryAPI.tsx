@@ -22,14 +22,14 @@ function RandomCountryAPI() {
   }, []);
 
   return (
-    <div className="mainDivRAPI">
-        <div className="countryInfoRAPI">
-          <p className="countryNameRAPI">Currently in {countryData.name}</p>
-          <p className="amountStarvingRAPI">There are {Intl.NumberFormat('fr-FR').format(metricsData.people)} people starving</p>
-          <p className="percentageStarvingRAPI">That represents {Math.round(metricsData.prevalence * 100)}% of the countries population</p>
+    <div className="mainDivRandom-API">
+        <div className="countryInfoRandom-API">
+          <p className="countryNameRandom-API">Currently in {countryData.name}</p>
+          <p className="amountStarvingRandom-API">There are {Intl.NumberFormat('fr-FR').format(metricsData.people)} people starving</p>
+          <p className="percentageStarvingRandom-API">That represents {Math.round(metricsData.prevalence * 100)}% of the countries population</p>
         </div>
-        <div className="buttonDivRAPI">
-          <button className="buttonRAPI">See more statistics &gt;&gt;</button>
+        <div className="buttonDivRandom-API">
+          <button className="buttonRandom-API">See more statistics &gt;&gt;</button>
         </div>
     </div>
   );

@@ -35,7 +35,6 @@ function App() {
               <DonationBox/>
               </>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
-        <Route path="/Statistics" element={<CountryStatisticsAPI></CountryStatisticsAPI>}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
