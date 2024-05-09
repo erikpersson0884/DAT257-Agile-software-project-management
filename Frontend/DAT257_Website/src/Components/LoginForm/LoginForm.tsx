@@ -1,20 +1,41 @@
 import "./LoginForm.css";
 import { useState } from "react";
+import axios from "axios";
+
+let adminKey;
 
 function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    const donationData = {
+    const loignData = {
       email,
       password,
     };
 
-    console.log(donationData);
     setEmail("");
     setPassword("");
+  
+    console.log(loignData);
+
+    axios
+      .post("/api/auth/login", loignData)
+      .then(response => {
+        console.log('Response data:', response.data);
+        if (response.status === 200) {
+          console.log('Login successful');
+          adminKey = response.data.adminKey;
+          localStorage.setItem('adminKey', adminKey);
+        } else {
+          console.log('Login failed');
+        }
+      })
+      .catch(error => {
+        console.error('Error sending POST request:', error);
+      });
   };
 
 
