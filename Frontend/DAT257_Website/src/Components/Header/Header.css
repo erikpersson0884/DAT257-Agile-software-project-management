@@ -1,4 +1,7 @@
 header {
+    background-color: #DDA63A;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,6 +9,7 @@ header {
     top: 0;
     max-width: 100vw;
     z-index: 1000;
+    padding: .1rem 2rem;
 }
 
 .wrapperHead {
@@ -15,8 +19,6 @@ header {
     gap: 2rem;
     width: 100%;
     height: 5rem;
-    background-color: #DDA63A;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logoLinkHeader {
