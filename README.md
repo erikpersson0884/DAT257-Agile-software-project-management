@@ -15,12 +15,45 @@
 
 Our github repo for the course DAT257 - Agile-software-project-management
 
-<!--
-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-![Github licence](https://img.shields.io/badge/licence-CC_BY_NC_SA_4.0-blueviolet?style=flat-square)
-</a>
 
-### License:
-**Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
+## Login system
 
--->
+Api endpoints:
+
+* auth/
+    * /login - takes a json object of username and password, returns a adminKey which can be used to 
+
+    * /testAdminKey - Takes a json object containing a adminKey, and returns a boolean depending on the validity of the adminKey
+    
+
+## People management system
+
+* people/
+
+    handles user management, currently works towards a json file using the following sctucture:
+    
+        {
+            "name": "John",
+            "surname": "johnsson",  
+            "email": "johnthecoolguy@gmail.com",
+            "password": "massivepeepoo",
+            "id": "1"
+        }
+
+    * /getUsers - Takes a adminKey and returns a list of all users, if 
+        - the key is valid
+        - The user has accountype "admin"
+
+    * /getUser - Takes a adminKey and returns a json object of that user in the format mentioned previously.
+
+    * /addUser - Takes a json object containing name, password and email and creates a new user with accountType "user" and a randomized userId.
+
+    * /updateUser - Takes a user and a adminKey as a json object and updates it if 2 conditions are met: 
+        - The adminKey is valid
+        - The adminKey matches the userId
+
+    * /removeUser - Takes a adminKey and a userId and removes the user if:
+        - The adminKey is valid.
+        - The adminKey matches the user requested to be removed.
+    
+

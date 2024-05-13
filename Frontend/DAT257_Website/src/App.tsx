@@ -9,7 +9,7 @@ import Header from "./Components/Header/Header.tsx";
 import RegisterPage from "./Components/RegisterPage/RegisterPage.tsx";
 import { useState } from "react";
 import ProfilePageFetcher from "./Components/ProfilePage/ProfilePageFetcher.tsx";
-import WebsiteFeature from "./Components/WebsiteFeature/WebsiteFeature.tsx"
+import WebsiteFeature from "./Components/WebsiteFeature/WebsiteFeature.tsx";
 
 function App() {
   const [data, setData] = useState();
@@ -27,10 +27,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/information" element={<InformationPage />}></Route>
-        <Route path="/" element={<> 
-              <WebsiteFeature/><DonationBox /></>}>        
-        </Route>
         <Route path="/profile" element={<ProfilePageFetcher />}></Route>
+        <Route path="/donate" element={<DonationBox />}></Route>
+        <Route path="/" element={<WebsiteFeature />}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
       </Routes>
       <Footer />

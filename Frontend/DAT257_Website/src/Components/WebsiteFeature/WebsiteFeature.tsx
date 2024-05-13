@@ -12,7 +12,7 @@ function WebsiteFeature () {
                         Act now!
                     </h4>
                     <Link to="/Donate">
-                        <button className= "btn">
+                        <button className= "btnFeature">
                             Donate Here!
                         </button>
                     </Link>
