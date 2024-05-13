@@ -6,8 +6,8 @@ import ProfilePage from "./ProfilePage";
 
 interface User {
   id: number;
-  firstName: string;
-  lastName: string;
+  name: string;
+  //lastName: string;
   email: string;
   donations: Array<string>;
 }
@@ -19,8 +19,15 @@ function ProfilePageFetcher() {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await axios.get(`link-to-backend/${userId}`);
-        setUserProfile(response.data);
+        var adminKey = localStorage.getItem("adminKey");
+        var response = null;
+        if (adminKey) {
+          response = await axios.post("/api/people/getUser", { adminKey });
+
+          console.log(response);
+          setUserProfile(response.data);
+          console.log("Profile was successfully fetched");
+        }
       } catch (error) {
         console.error("Error fetching user profile:", error);
       }
@@ -29,9 +36,7 @@ function ProfilePageFetcher() {
     fetchUserProfile();
   }, [userId]);
 
-  return (
-    <ProfilePage userProfile={userProfile} />
-  );
+  return <ProfilePage userProfile={userProfile} />;
 }
 
 export default ProfilePageFetcher;
