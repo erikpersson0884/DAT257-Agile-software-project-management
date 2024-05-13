@@ -23,8 +23,6 @@ function ProfilePageFetcher() {
         var response = null;
         if (adminKey) {
           response = await axios.post("/api/people/getUser", { adminKey });
-
-          console.log(response);
           setUserProfile(response.data);
           console.log("Profile was successfully fetched");
         }
