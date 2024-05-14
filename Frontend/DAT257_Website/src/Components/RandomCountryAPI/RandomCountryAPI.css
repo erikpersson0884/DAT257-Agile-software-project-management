@@ -29,6 +29,7 @@
 }
 
 .buttonRandom-API{
+    font-size: 1vw;
     background: none;
     border: none;
     outline: none;
@@ -47,16 +48,8 @@
     margin-left: auto;
     bottom: 10px;
 }
+
 .buttonDivRandom-API:hover{
     background-color: rgba(224, 224, 224, 0.986);
     transition: 0.2s ease-in-out;
-}
-
-.buttonImageRandom-API{
-    width: 25px;
-    height: 25px;
-    background: none;
-    border: none;
-    outline: none;
-    box-shadow: none;
 }

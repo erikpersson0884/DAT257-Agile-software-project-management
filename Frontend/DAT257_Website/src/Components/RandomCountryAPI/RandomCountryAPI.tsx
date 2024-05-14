@@ -1,26 +1,38 @@
 import "./RandomCountryAPI.css";
 import React, { useState, useEffect, } from "react";
-import axios from "axios";
 
 function RandomCountryAPI() {
   const url = "https://api.hungermapdata.org/v1/foodsecurity/country";
   const [countryData, setCountry] = useState({});
   const [metricsData, setMetrics] = useState({});
+  const [loading, setLoading] = useState(false);
   const randomInt = Math.round(Math.random() * 83)
 
-  const fetchCountry = () => {
-    return axios.get(url).then((res) => setCountry(res.data.countries[randomInt].country));
-  };
-
-  const fetchMetrics = () => {
-    return axios.get(url).then((res) => setMetrics(res.data.countries[randomInt].metrics.fcs));
-  };
-
   useEffect(() => {
-    fetchMetrics();
-    fetchCountry();
+    setLoading(true);
+    fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      setCountry(data.countries[randomInt].country);
+      setMetrics(data.countries[randomInt].metrics.fcs);
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+    .finally(() => {
+        setLoading(false);
+    });
   }, []);
+  if(loading) {
+    return(
+    <div className="mainDivRandom-API">
+      <div className="countryInfoRandom-API">
+        <p>Loading...</p>
+      </div>
+    </div>
+  )
 
+  } else {
   return (
     <div className="mainDivRandom-API">
         <div className="countryInfoRandom-API">
@@ -33,6 +45,7 @@ function RandomCountryAPI() {
         </div>
     </div>
   );
+}
 }
 
 export default RandomCountryAPI;
