@@ -9,6 +9,7 @@ const image ="/src/assets/goal-logo.png";
 
 donationsRouter.get('/getLeaderboard', (req, res) => {
     let leaderboardData = fs.readFileSync("data/donations.json", 'utf8');
+    leaderboardData = JSON.parse(leaderboardData);
     res.status(200).send(leaderboardData);
 });
 
