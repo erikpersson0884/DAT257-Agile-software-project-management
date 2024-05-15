@@ -3,6 +3,7 @@ import fs from 'fs';
 
 
 import { isAdminKeyValid, userHasPermission, pathToUsersFile, getUserFromUserId, getUserIdFromAdminKey } from './authRouter.js'
+import { get } from 'http';
 
 
 
@@ -26,6 +27,18 @@ peopleRouter.post('/getUsers', (req, res) => {
 	}
 
 	res.status(200).send(users);
+});
+
+peopleRouter.post('/getUser', (req, res) => {
+	if (!isAdminKeyValid(req.body.adminKey)) return res.status(403).send("Adminkey not valid");
+	const adminKey = req.body.adminKey;
+
+	let people = fs.readFileSync(pathToUsersFile, 'utf8');
+	people = JSON.parse(people);
+
+	const userId = getUserIdFromAdminKey(adminKey);
+	const user = people.find(user => user.id === userId);
+	return res.status(200).send(user);
 });
 
 peopleRouter.post('/updateUser', (req, res) => {
