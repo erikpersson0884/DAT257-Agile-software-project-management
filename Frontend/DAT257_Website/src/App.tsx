@@ -28,6 +28,7 @@ function App() {
 
       <Routes>
         <Route path="/information" element={<InformationPage />}></Route>
+
         <Route path="/donate" element={<DonationBox/>}></Route>
         <Route path="/" element={<WebsiteFeature/>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>

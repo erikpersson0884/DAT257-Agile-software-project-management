@@ -1,4 +1,5 @@
 #root{gap: 0 !important}
+
 .featureImage{
     color: #fff;
     background-color: rgb(9, 161, 118);
@@ -22,6 +23,7 @@
     align-items: flex-start;
     gap: 1rem;
 }
+
 
 .btnFeature{
     border-radius: 8px;
