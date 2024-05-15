@@ -2,9 +2,13 @@
   "dependencies": {
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
-    "concurrently": "^8.2.2"
+    "chai": "^5.1.1",
+    "concurrently": "^8.2.2",
+    "mocha": "^10.4.0",
+    "supertest": "^7.0.0"
   },
   "scripts": {
-    "start": "concurrently \"cd ./Backend && npm run server\" \"cd ./Frontend/DAT257_Website && npm run dev\""
+    "start": "concurrently \"cd ./Backend && npm run server\" \"cd ./Frontend/DAT257_Website && npm run dev\"",
+    "test": "mocha tests/**/*.test.js"
   }
 }
