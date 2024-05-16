@@ -6,7 +6,8 @@ import LoginForm from "../LoginForm/LoginForm";
 
 
 function Header(){
-    let navList = ["information", "Statistics", "donate", "about", "contact"];
+
+    let navList = ["information", "Statistics", "donate", "about", "contact", "leaderboard"];
     const [showLoginForm, setShowLoginForm] = useState(false);
 
     const displayLoginForm = () => {
@@ -38,7 +39,7 @@ function Header(){
                     </ul>
 
                     <div className="loginFormContainer">
-                    {showLoginForm && <LoginForm></LoginForm>}
+                    {showLoginForm && <LoginForm showLoginForm={showLoginForm} displayLoginForm={displayLoginForm}></LoginForm>}
                     </div>
                 </div>
             </div>

@@ -1,8 +1,9 @@
 [
-    {
-        "id": "1",
-        "name": "John",
-        "email": "johnthecoolguy@gmail.com",
-        "password": "massivepeepoo"
-    }
+  {
+    "name": "John",
+    "surname": "johnsson",  
+    "email": "johnthecoolguy@gmail.com",
+    "password": "massivepeepoo",
+    "id": "1"
+  }
 ]
