@@ -34,9 +34,12 @@ function App() {
         <Route path="/about" element={<AboutPage></AboutPage>}> </Route>
         <Route path="/profile" element={<ProfilePageFetcher />}></Route>
         <Route path="/donate" element={<DonationBox/>}></Route>
-        <Route path="/" element={<WebsiteFeature/>}></Route>
+        <Route path="/" element={<> 
+              <WebsiteFeature/>
+              <RandomCountryAPI/>
+              </>}></Route>
+        <Route path="/donate" element={<DonationBox/>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
-        <Route path="/leaderboard" element={<TopDonations />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

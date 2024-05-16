@@ -1,62 +1,55 @@
-.mainDivRAPI{
+.mainDivRandom-API{
     width: 70vw;
     height: 250px;
     align-self: center;
     background-color: #DDA63A;
+    border-radius: 25px;
+    margin: 10px;
 }
 
-.countryInfoRAPI{
+.countryInfoRandom-API{
     width: 100%;
     height: 80%;
-    border-radius: 25px;
     color: black;
     text-align: center;
 }
 
-.countryNameRAPI{
+.countryNameRandom-API{
     color: black;
     font-size: 40px;
     padding-top: 10px;
 }
 
-.amountStarvingRAPI{
+.amountStarvingRandom-API{
     font-size: 25px;
 }
 
-.percentageStarvingRAPI{
+.percentageStarvingRandom-API{
     font-size: 25px;
 }
 
-.buttonRAPI{
+.buttonRandom-API{
+    font-size: 1vw;
     background: none;
     border: none;
     outline: none;
     box-shadow: none;
 }
 
-.buttonDivRAPI{
-    position: relative;
+.buttonDivRandom-API{
     display: flex;
     justify-content: center;
     background-color: white;
     padding: 5px;
     border-radius: 10px;
-    width: 185px;
-    height: 40px;
-    margin-right: 10px;
+    width: 12vw;
+    height: auto;
+    margin-right: 1vw;
     margin-left: auto;
+    bottom: 10px;
 }
 
-.buttonDivRAPI:hover{
+.buttonDivRandom-API:hover{
     background-color: rgba(224, 224, 224, 0.986);
     transition: 0.2s ease-in-out;
-}
-
-.buttonImageRAPI{
-    width: 25px;
-    height: 25px;
-    background: none;
-    border: none;
-    outline: none;
-    box-shadow: none;
 }
