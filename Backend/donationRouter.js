@@ -11,7 +11,6 @@ donationsRouter.get('/getLeaderboard', (req, res) => {
     console.log(sortBy)
     let leaderboardData = fs.readFileSync("data/donations.json", 'utf8');
     leaderboardData = JSON.parse(leaderboardData);
-
     if (sortBy == "amount") {
         console.log("amount - if")
         leaderboardData.sort((a, b) => b.amount - a.amount);
@@ -22,6 +21,7 @@ donationsRouter.get('/getLeaderboard', (req, res) => {
 
     // Return only the top 25 items
     leaderboardData = leaderboardData.slice(0, 25);
+
     res.status(200).send(leaderboardData);
 });
 
