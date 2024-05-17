@@ -4,9 +4,14 @@ import UserLogo from "./UserLogo";
 import { useState } from "react";
 import LoginForm from "../LoginForm/LoginForm";
 
+function capitalizeWords(str) {
+    return str.replace(/_/g, ' ')
+              .replace(/\b\w/g, (char) => char.toUpperCase());
+}
 
 function Header(){
-    let navList = ["information", "Statistics", "donate", "about", "contact"];
+
+    let navList = ["information", "Statistics", "donate", "about", "contact", "top_donations"];
     const [showLoginForm, setShowLoginForm] = useState(false);
 
     const displayLoginForm = () => {
@@ -28,7 +33,7 @@ function Header(){
 
                         {navList.map((item) => 
                             <li className="divNavItemA">
-                                <Link to={"/"+item} >{item}</Link>
+                                <Link to={"/"+item} >{capitalizeWords(item)}</Link>
                             </li>
                         )}
                         <div className="userLogo">
@@ -38,7 +43,7 @@ function Header(){
                     </ul>
 
                     <div className="loginFormContainer">
-                    {showLoginForm && <LoginForm></LoginForm>}
+                    {showLoginForm && <LoginForm showLoginForm={showLoginForm} displayLoginForm={displayLoginForm}></LoginForm>}
                     </div>
                 </div>
             </div>

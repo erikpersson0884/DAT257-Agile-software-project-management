@@ -11,7 +11,7 @@ function Footer() {
             <img src='src/assets/goal-logo.png'></img>
             <div>
                 <h2>Sitemap</h2>
-                <ul>
+                <ul className='links'>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
@@ -23,25 +23,25 @@ function Footer() {
 
             <div>
                 <h2>Socials</h2>
-                <ul>
+                <ul className='links'>
                     <li>
-                        <a href='https://www.instagram.com/...'>Facebook</a>
+                        <a href='https://www.facebook.com/'>Facebook</a>
                     </li>
                     <li>
-                        <a href='https://www.instagram.com/...'>Linkedin</a>
+                        <a href='https://www.linkedin.com/'>Linkedin</a>
                     </li>
                     <li>
-                        <a href='https://www.instagram.com/...'>Instgram</a>
+                        <a href='https://www.instagram.com/'>Instgram</a>
                     </li>
                     <li>
-                        <a href='https://www.instagram.com/...'>X</a>
+                        <a href='https://www.x.com/'>Twitter / X</a>
                     </li>
                 </ul>
             </div>
 
             <div>
                 <h2>Contact</h2>
-                <ul>
+                <ul className='links'>
                     <li>
                         <a href="mailto:HungerZero@gmail.com">HungerZero@gmail.com</a>
                     </li>

@@ -3,6 +3,7 @@
     flex-direction: column;
     align-content: center;
     width: auto;
+    margin: 5%
 }
 
 .registerFormBox {
@@ -10,5 +11,10 @@
     padding: 40px;
     height: min-content;
     border-radius: 5px;
-    background-color: rgba(224, 224, 224, 0.986);
+    background-color: #6c5327;
+    color: white;
+}
+
+.registerLoginWrapper{
+    padding-top: 10%;
 }

@@ -9,7 +9,8 @@
     width: auto;
     padding: 40px;
     border-radius: 5px;
-    background-color: rgba(224, 224, 224, 0.986);
+    background-color: #6c5327;
+    color: aliceblue;
 }
 
 .DonationBox {
@@ -64,4 +65,8 @@
 .wrapperDonationBox input[type="checkbox" i] {
     padding: 0;
     margin-right: 0.5rem;
+}
+
+.form-control-full {
+    margin-top: 20px;
 }

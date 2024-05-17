@@ -8,7 +8,7 @@
 .LoginBox {
     width: 100%;
     border-radius: 5px;
-    background-color: rgba(224, 224, 224, 0.986);
+    background-color: #DDA63A;
 }
 
 .form-control {
@@ -31,7 +31,7 @@
     --bs-btn-bg: #311987;
     --bs-btn-border-color: #2f1987;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #231573;
+    --bs-btn-hover-bg: #170e4c;
     --bs-btn-hover-border-color: #20146c;
     --bs-btn-focus-shadow-rgb: 60, 153, 110;
     --bs-btn-active-color: #fff;

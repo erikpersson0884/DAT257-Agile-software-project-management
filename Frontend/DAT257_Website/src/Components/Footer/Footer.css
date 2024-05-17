@@ -1,15 +1,17 @@
 
 
 footer {
-    background-color: grey;
-    padding: 20px 0;
+    background-color: #6c5327;
+    color: aliceblue;
+
     text-align: center;
-    position: relative;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    bottom: 0;
+
     max-width: 100vw;
+    padding: 20px 0;
 }
 
 footer ul {
@@ -17,10 +19,13 @@ footer ul {
 }
 
 footer img {
-    width: 15%;
+    width: 12%;
 }
 
+.links a {
+    color: aliceblue;
+}
 
-footer a {
-    color: white;
+.links :hover {
+    color: rgb(55 65 81);
 }
