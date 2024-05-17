@@ -3,27 +3,31 @@ import React, { useState, useEffect, } from "react";
 
 function CountryStatisticsAPI() {
   const url = "https://api.hungermapdata.org/v1/foodsecurity/country";
-  const [countryData, setCountry] = useState([]);
+  const [countryData, setCountry] = useState(null);
   const [loading, setLoading] = useState(false);
 
 
   useEffect(() => {
-    setLoading(true);
-    fetch(url)
-    .then((res) => res.json())
-    .then((data) => {
-      setCountry(data.countries);
-    })
-    .catch((err) => {
-        console.log(err);
-    })
-    .finally(() => {
-        setLoading(false);
-    });
+    const callAPI = async () => {
+      setLoading(true);
+      fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setCountry(data.countries);
+      })
+      .catch((err) => {
+          console.log(err);
+      })
+      .finally(() => {
+          setLoading(false);
+      });
+
+    }
+    callAPI();
   }, []);
   
 
-  if(loading) {
+  if(loading || countryData == null) {
     return(
     <div className="mainDivCAPI">
       <p className="loadingCAPI">Loading...</p>
