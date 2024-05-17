@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./DonationBox.css";
+import axios from "axios";
 
 function DonationBox() {
 
@@ -20,18 +21,24 @@ function DonationBox() {
       isAnonymous,
       email,
       donationAmount,
-      cardNumber,
-      cvcNumber,
-      expDate,
     };
+
+    axios
+      .post("/api/donate/addDonation", donationData)
+      .then((response) => {
+        console.log("Response data", response.data);
+        if (response.status === 200) {
+          console.log("Donation success");
+        }
+        else {
+          console.log("Donation fail");
+        }
+      });
     console.log(donationData);
     setFirstName("");
     setLastName("");
     setEmail("");
     setDonationAmount("");
-    setCardNumber("");
-    setCvcNumber("");
-    setExpDate("");
   };
 
   return (
