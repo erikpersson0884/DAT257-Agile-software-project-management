@@ -98,7 +98,7 @@ export function getUserFromAdminKey(adminKey) {
     // Find the admin key in the adminKeys array
     const adminKeyData = validAdminKeys.find(keyData => keyData.key === adminKey);
     if (!adminKeyData) {
-        return null; // Admin key not found
+        throw new Error('Adminkey not found!!!');
     }
 
     // Find the user with the same name as the admin key
@@ -106,6 +106,10 @@ export function getUserFromAdminKey(adminKey) {
     userCredentials = JSON.parse(userCredentials); // Parse the JSON string into an object
     const user = userCredentials.find(user => user.id === adminKeyData.id);
 
+    if (!user) {
+        throw new Error('User not found!!!');
+    }
+    
     return user;
 }   
 

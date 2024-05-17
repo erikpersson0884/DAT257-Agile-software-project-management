@@ -57,3 +57,18 @@ Api endpoints:
         - The adminKey matches the user requested to be removed.
     
 
+
+## Donations
+
+    {
+        "donationId": string,
+        "donationAmount": number,
+        "date": string (Date),
+        "user": {
+            "type": registered | guest | anonomous,
+            "info": String(userId) | {
+                "firstname": String,
+                "lastname": String
+            } | None
+        }
+    }

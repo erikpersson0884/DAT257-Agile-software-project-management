@@ -14,19 +14,10 @@ import WebsiteFeature from "./Components/WebsiteFeature/WebsiteFeature.tsx";
 import TopDonations from "./Components/TopDonations/TopDonaitons.tsx";
 
 function App() {
-  const [data, setData] = useState();
-  const urlProxy = "/api/v1";
-
-  axios
-    .get(urlProxy)
-    .then((res) => setData(res.data))
-    .catch((err) => {
-      console.error(err);
-    });
-
   return (
     <BrowserRouter>
       <Header />
+      
       <Routes>
         <Route path="/information" element={<InformationPage />}></Route>
         <Route path="/about" element={<AboutPage></AboutPage>}> </Route>
@@ -34,8 +25,10 @@ function App() {
         <Route path="/donate" element={<DonationBox/>}></Route>
         <Route path="/" element={<WebsiteFeature/>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
-        <Route path="/leaderboard" element={<TopDonations />}></Route>
+        <Route path="/profile" element={<ProfilePageFetcher />}></Route>
+        <Route path="/leaderboard" element={<TopDonations/>}></Route>
       </Routes>
+
       <Footer />
     </BrowserRouter>
   );
