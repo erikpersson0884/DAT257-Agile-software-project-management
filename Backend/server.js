@@ -5,7 +5,7 @@ import fs from 'fs';
 
 import authRouter from './authRouter.js';
 import peopleRouter from './peopleRouter.js';
-
+import donationsRouter from './donationRouter.js';
 
 const app = express()
 app.use(express.json());
@@ -17,6 +17,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use("/api/auth", authRouter);
 app.use("/api/people", peopleRouter);
+app.use('/api/donations', donationsRouter);
 
 export const dataPath = "./data";
 

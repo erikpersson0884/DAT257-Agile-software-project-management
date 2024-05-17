@@ -11,7 +11,7 @@ function capitalizeWords(str) {
 
 function Header(){
 
-    let navList = ["information", "Statistics", "donate", "about", "contact", "leaderboard"];
+    let navList = ["information", "Statistics", "donate", "about", "contact", "top_donations"];
     const [showLoginForm, setShowLoginForm] = useState(false);
 
     const displayLoginForm = () => {
