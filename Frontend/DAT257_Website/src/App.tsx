@@ -40,6 +40,7 @@ function App() {
               </>}></Route>
         <Route path="/donate" element={<DonationBox/>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
+        <Route path="/statistics" element={<CountryStatisticsAPI/>}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

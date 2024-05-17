@@ -1,16 +1,35 @@
 .mainDivCAPI{
-    width: 90vw;
+    display: flex;
+    width: 85vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    background-color: #DDA63A;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 75vh;
 
 }
 
-.countryInfoCAPI{
+.countryBoxCAPI{
     background-color: white;
-    width: 20vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 15vw;
+    margin: 1vw;
+    border-radius: 20px;
 
+}
+
+.countryNameCAPI{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.loadingCAPI{
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }

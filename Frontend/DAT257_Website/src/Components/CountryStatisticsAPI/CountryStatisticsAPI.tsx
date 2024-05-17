@@ -1,40 +1,48 @@
 import "./CountryStatisticsAPI.css";
 import React, { useState, useEffect, } from "react";
-import axios from "axios";
 
 function CountryStatisticsAPI() {
   const url = "https://api.hungermapdata.org/v1/foodsecurity/country";
   const [countryData, setCountry] = useState([]);
-  const [metricsData, setMetrics] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-  const fetchCountry = () => {
-    return axios.get(url).then((res) => setCountry(res.data.countries));
-  };
-
-  const fetchMetrics = () => {
-    return axios.get(url).then((res) => setMetrics(res.data.countries.metrics.fcs));
-  };
 
   useEffect(() => {
-    fetchMetrics();
-    fetchCountry();
+    setLoading(true);
+    fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      setCountry(data.countries);
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+    .finally(() => {
+        setLoading(false);
+    });
   }, []);
+  
 
+  if(loading) {
+    return(
+    <div className="mainDivCAPI">
+      <p className="loadingCAPI">Loading...</p>
+    </div>
+    )
+  } else {
   return (
     <div className="mainDivCAPI">
-        {countryData.map((countryData, index) => {
-            return(<div className="countryInfoCAPI"><p className="countryNameCAPI">{countryData.country.name}</p></div>)
-        })}
-        {metricsData.map((metricsData, index) => {
+        {countryData.map((dataObj, index) => {
             return(
-            <div className="countryStatisticsCAPI">
-            <p className="amountStarvingCAPI">There are {Intl.NumberFormat('fr-FR').format(metricsData.people)} people starving</p>
-            <p className="percentageStarvingCAPI">That is {Math.round(metricsData.prevalence * 100)}% of the countries population</p>
-            </div>
-            )
+            <div className="countryBoxCAPI">
+                <p className="countryNameCAPI">{dataObj.country.name}</p>
+                <p className="amountStarvingCAPI">People starving :{Intl.NumberFormat('fr-FR').format(dataObj.metrics.fcs.people)}</p>
+                <p className="percentageStarvingCAPI">{Math.round(dataObj.metrics.fcs.prevalence * 100)}% of the countries population</p>
+            </div>)
         })}
     </div>
   );
+  }
 }
 
 export default CountryStatisticsAPI;
