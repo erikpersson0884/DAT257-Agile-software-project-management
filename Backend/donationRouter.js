@@ -6,10 +6,22 @@ import { getUserIdFromAdminKey } from './authRouter.js';
 const donationsRouter = Router();
 const image ="/src/assets/goal-logo.png";
 
-
 donationsRouter.get('/getLeaderboard', (req, res) => {
+    const sortBy = req.query.sortBy;
+    console.log(sortBy)
     let leaderboardData = fs.readFileSync("data/donations.json", 'utf8');
     leaderboardData = JSON.parse(leaderboardData);
+    if (sortBy == "amount") {
+        console.log("amount - if")
+        leaderboardData.sort((a, b) => b.amount - a.amount);
+    } else {
+        console.log("date - if")
+        leaderboardData.sort((a, b) => b.date - a.date);
+    }
+
+    // Return only the top 25 items
+    leaderboardData = leaderboardData.slice(0, 25);
+
     res.status(200).send(leaderboardData);
 });
 
@@ -42,10 +54,5 @@ donationsRouter.post('/addDonation', (req, res) => {
     fs.writeFileSync("data/donations.json", JSON.stringify(leaderboardData, null, 2))
     res.status(200).send(leaderboardData);
 });
-
-
-
-
-
 
 export default donationsRouter;

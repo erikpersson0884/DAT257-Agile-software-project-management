@@ -33,13 +33,18 @@ Api endpoints:
     handles user management, currently works towards a json file using the following sctucture:
     
         {
-        "id": "asojf8jd1",
-        "name": "John Doe",
-        "email": "johnthecoolguy@gmail.com",
-        "password": "supersecretPassword1234"
+            "name": "John",
+            "surname": "johnsson",  
+            "email": "johnthecoolguy@gmail.com",
+            "password": "massivepeepoo",
+            "id": "1"
         }
 
-    * /getUsers - Takes a adminKey and returns a list of all users, if the key is valid
+    * /getUsers - Takes a adminKey and returns a list of all users, if 
+        - the key is valid
+        - The user has accountype "admin"
+
+    * /getUser - Takes a adminKey and returns a json object of that user in the format mentioned previously.
 
     * /addUser - Takes a json object containing name, password and email and creates a new user with accountType "user" and a randomized userId.
 

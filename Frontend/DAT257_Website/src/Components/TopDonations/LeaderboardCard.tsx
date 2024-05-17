@@ -7,7 +7,7 @@ interface LeaderboardCardProps {
     position: number;
     name: string;
     donationAmount: number;
-    date: Date;
+    date: number;
 }
 
 function LeaderboardCard({image, position, name, donationAmount, date}: LeaderboardCardProps) {

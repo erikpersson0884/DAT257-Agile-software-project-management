@@ -1,14 +1,49 @@
-import { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import "./TopDonations.css";
 import image from "/src/assets/goal-logo.png";
 import LeaderboardCard from "./LeaderboardCard";
 
 
+interface User {
+    type: string;
+    firstname?: string;
+    lastname?: string;
+    userId?: string;
+}
+
+interface Donation {
+    amount: string;
+    date: number;
+    user: User;
+}
 
 function TopDonations() {
-
+    const [leaderboardData, setLeaderboardData] = useState<Donation[]>([]);
     const [isRecentSelected, setIsRecentSelected] = useState(true);
 
+    useEffect(() => {
+        const sortBy = isRecentSelected ? 'date' : 'amount';
+        fetch(`/api/donations/getLeaderboard?sortBy=${sortBy}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Ensure that amount is converted to a number
+                const processedData = data.map((donation: Donation) => ({
+                    ...donation,
+                    amount: parseInt(donation.amount, 10) // Convert amount to integer
+                }));
+                setLeaderboardData(processedData);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    }, [isRecentSelected]);
+    
+    
     const handleRecentClick = () => {
         setIsRecentSelected(true);
     };
@@ -16,79 +51,7 @@ function TopDonations() {
     const handleTopClick = () => {
         setIsRecentSelected(false);
     };
-
-    const leaderboardData = [
-        {
-            image: image,
-            name: "David Lewis",
-            donationAmount: 100000,
-            date: new Date("2019-01-16")
-        },
-        {
-            image: image,
-            name: "David Albert",
-            donationAmount: 40000,
-            date: new Date("2019-01-16")
-        },
-        {
-            image: image,
-            name: "Verylong namethat istotesthowthislooks",
-            donationAmount: 30000,
-            date: new Date("2019-01-16")
-        },
-        {
-            image: image,
-            name: "David",
-            donationAmount: 25000,
-            date: new Date("2019-01-16")
-        },
-        {
-            image: image,
-            name: "pixeln",
-            donationAmount: 20000,
-            date: new Date("2019-01-16")
-        },
-        {
-            image: "/src/assets/goal-logo.png",
-            name: "RANGO BANGO KATAPULT TANGO",
-            donationAmount: 15000,
-            date: new Date("2019-01-16")
-        },
-        {
-            image: image,
-            name: "Erik Gökman",
-            donationAmount: 100600,
-            date: new Date("2019-01-16")
-        },   
-        {
-            image: image,
-            name: "Anton",
-            donationAmount: 8,
-            date: new Date("2019-01-16")
-        },   
-        {
-            image: image,
-            name: "ROLF JOHANSSON",
-            donationAmount: 2930,
-            date: new Date("2019-01-16")
-        },   
-        {
-            image: image,
-            name: "Albert",
-            donationAmount: 1273,
-            date: new Date("2019-01-16")
-        },   
-        {
-            image: image,
-            name: "Pelle",
-            donationAmount: 3872,
-            date: new Date("2019-01-16")
-        }   
-    ]
-
-    leaderboardData.sort((a, b) => b.donationAmount - a.donationAmount);
     
-
     return(
         <>
             <div className="bodyTopDonations">
@@ -109,16 +72,35 @@ function TopDonations() {
                         </div>
                     </div>
                     <div className="rowTopDonations">
-                        {leaderboardData.map((item, index) => (
+                    {leaderboardData.map((item, index) => {
+                        let name = '';
+
+                        switch (item.user.type) {
+                            case 'registered':
+                                name = `${item.user.firstname} ${item.user.lastname}`;
+                                break;
+                            case 'guest':
+                                name = `${item.user.firstname} ${item.user.lastname}`;
+                                break;
+                            case 'anonymous':
+                                name = 'Anonymous';
+                                break;
+                            default:
+                                name = 'Unknown';
+                        }
+
+                        return (
                             <LeaderboardCard
                                 key={index}
-                                image={item.image}
+                                image={image}
                                 position={index + 1}
-                                name={item.name}
-                                donationAmount={item.donationAmount}
+                                name={name}
+                                donationAmount={parseInt(item.amount)}
                                 date={item.date}
                             />
-                        ))}
+                        );
+                    })}
+
                         
                     
                     </div>

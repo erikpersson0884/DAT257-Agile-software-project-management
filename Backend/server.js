@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use("/api/auth", authRouter);
 app.use("/api/people", peopleRouter);
-app.use("/api/donations", donationsRouter);
+app.use('/api/donations', donationsRouter);
 
 export const dataPath = "./data";
 

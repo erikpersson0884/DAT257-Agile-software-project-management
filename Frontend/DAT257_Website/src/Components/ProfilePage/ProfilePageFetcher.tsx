@@ -6,8 +6,8 @@ import ProfilePage from "./ProfilePage";
 
 interface User {
   id: number;
-  firstName: string;
-  lastName: string;
+  name: string;
+  //lastName: string;
   email: string;
   donations: Array<string>;
 }
@@ -29,9 +29,7 @@ function ProfilePageFetcher() {
     fetchUserProfile();
   }, [userId]);
 
-  return (
-    <ProfilePage userProfile={userProfile} />
-  );
+  return <ProfilePage userProfile={userProfile} />;
 }
 
 export default ProfilePageFetcher;

@@ -47,9 +47,6 @@ function DonationBox() {
     setLastName("");
     setEmail("");
     setDonationAmount("");
-    setCardNumber("");
-    setCvcNumber("");
-    setExpDate("");
   };
 
   return (
