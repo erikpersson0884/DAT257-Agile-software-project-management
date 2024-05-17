@@ -1,0 +1,1900 @@
+{
+    "countries": [
+        {
+            "country": {
+                "id": 1,
+                "iso2": "AF",
+                "iso3": "AFG",
+                "name": "Afghanistan"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 31104986,
+                    "prevalence": 0.7696994587653098
+                },
+                "healthAccess": {
+                    "people": 14447720,
+                    "prevalence": 0.4366182455516695
+                },
+                "marketAccess": {
+                    "people": 10547102,
+                    "prevalence": 0.26099027020756455
+                },
+                "rcsi": {
+                    "people": 22349159,
+                    "prevalence": 0.553034667373258
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 4,
+                "iso2": "DZ",
+                "iso3": "DZA",
+                "name": "Algeria"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 9347406,
+                    "prevalence": 0.22135339728961728
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 8,
+                "iso2": "AO",
+                "iso3": "AGO",
+                "name": "Angola"
+            },
+            "dataType": "SURVEY",
+            "date": "2023-12-31",
+            "metrics": {
+                "fcs": {
+                    "people": 5459832,
+                    "prevalence": 0.1601401961420994
+                },
+                "healthAccess": {
+                    "people": 11247387,
+                    "prevalence": 0.3298926966112032
+                },
+                "livelihoodCoping": {
+                    "people": 10860929,
+                    "prevalence": 0.3185576691272907
+                },
+                "marketAccess": {
+                    "people": 19874844,
+                    "prevalence": 0.5829412539896592
+                },
+                "rcsi": {
+                    "people": 14115586,
+                    "prevalence": 0.4140187165060958
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 13,
+                "iso2": "AM",
+                "iso3": "ARM",
+                "name": "Armenia"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 499740,
+                    "prevalence": 0.16930140725400328
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 23,
+                "iso2": "BD",
+                "iso3": "BGD",
+                "name": "Bangladesh"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 45365559,
+                    "prevalence": 0.28115191101616027
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 29,
+                "iso2": "BJ",
+                "iso3": "BEN",
+                "name": "Benin"
+            },
+            "dataType": "SURVEY",
+            "date": "2022-01-11",
+            "metrics": {
+                "fcs": {
+                    "people": 4917492,
+                    "prevalence": 0.4281646883176867
+                },
+                "healthAccess": {
+                    "people": 7225200,
+                    "prevalence": 0.686137331594644
+                },
+                "livelihoodCoping": {
+                    "people": 2217262,
+                    "prevalence": 0.1930564062044919
+                },
+                "marketAccess": {
+                    "people": 8401571,
+                    "prevalence": 0.7315225113863174
+                },
+                "rcsi": {
+                    "people": 3141688,
+                    "prevalence": 0.2735459437863998
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 31,
+                "iso2": "BT",
+                "iso3": "BTN",
+                "name": "Bhutan"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 215903,
+                    "prevalence": 0.28619433107147074
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 33,
+                "iso2": "BO",
+                "iso3": "BOL",
+                "name": "Bolivia"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 2016088,
+                    "prevalence": 0.17757973959983941
+                },
+                "rcsi": {
+                    "people": 2619378,
+                    "prevalence": 0.23071833330367933
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 35,
+                "iso2": "BW",
+                "iso3": "BWA",
+                "name": "Botswana"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 484431,
+                    "prevalence": 0.21490857210289044
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 42,
+                "iso2": "BF",
+                "iso3": "BFA",
+                "name": "Burkina Faso"
+            },
+            "dataType": "SURVEY",
+            "date": "2023-12-07",
+            "metrics": {
+                "fcs": {
+                    "people": 11151121,
+                    "prevalence": 0.5645700709621084
+                },
+                "healthAccess": {
+                    "people": 4299151,
+                    "prevalence": 0.2867544364008708
+                },
+                "livelihoodCoping": {
+                    "people": 3284413,
+                    "prevalence": 0.16628654220220815
+                },
+                "marketAccess": {
+                    "people": 4447135,
+                    "prevalence": 0.22515397516189298
+                },
+                "rcsi": {
+                    "people": 2678863,
+                    "prevalence": 0.13562813642164334
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 43,
+                "iso2": "BI",
+                "iso3": "BDI",
+                "name": "Burundi"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 4108868,
+                    "prevalence": 0.3676715335867417
+                },
+                "rcsi": {
+                    "people": 4287576,
+                    "prevalence": 0.38366276144420003
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 44,
+                "iso2": "KH",
+                "iso3": "KHM",
+                "name": "Cambodia"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 1992218,
+                    "prevalence": 0.12259956232068624
+                },
+                "rcsi": {
+                    "people": 2636520,
+                    "prevalence": 0.16224941148495575
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 45,
+                "iso2": "CM",
+                "iso3": "CMR",
+                "name": "Cameroon"
+            },
+            "dataType": "SURVEY",
+            "date": "2023-12-25",
+            "metrics": {
+                "fcs": {
+                    "people": 10563979,
+                    "prevalence": 0.41893566810457644
+                },
+                "healthAccess": {
+                    "people": 11691947,
+                    "prevalence": 0.7369915517925272
+                },
+                "livelihoodCoping": {
+                    "people": 14575998,
+                    "prevalence": 0.5780403333037303
+                },
+                "marketAccess": {
+                    "people": 14877732,
+                    "prevalence": 0.5900061515931484
+                },
+                "rcsi": {
+                    "people": 9226903,
+                    "prevalence": 0.3659112511337935
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 47,
+                "iso2": "CV",
+                "iso3": "CPV",
+                "name": "Cape Verde"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 118838,
+                    "prevalence": 0.21854581098154172
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 49,
+                "iso2": "CF",
+                "iso3": "CAF",
+                "name": "Central African Republic"
+            },
+            "dataType": "MIXED",
+            "date": "2024-02-19",
+            "metrics": {
+                "fcs": {
+                    "people": 1843117,
+                    "prevalence": 0.394978075072358
+                },
+                "healthAccess": {
+                    "people": 1777993,
+                    "prevalence": 0.7059699113444274
+                },
+                "marketAccess": {
+                    "people": 2479545,
+                    "prevalence": 0.7166029216175771
+                },
+                "rcsi": {
+                    "people": 1803038,
+                    "prevalence": 0.38638918664540256
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 50,
+                "iso2": "TD",
+                "iso3": "TCD",
+                "name": "Chad"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-01-05",
+            "metrics": {
+                "fcs": {
+                    "people": 9292262,
+                    "prevalence": 0.5827009421278645
+                },
+                "healthAccess": {
+                    "people": 7194308,
+                    "prevalence": 0.63089557188907
+                },
+                "livelihoodCoping": {
+                    "people": 9749509,
+                    "prevalence": 0.611374010975387
+                },
+                "marketAccess": {
+                    "people": 7397799,
+                    "prevalence": 0.4639025941124534
+                },
+                "rcsi": {
+                    "people": 3154945,
+                    "prevalence": 0.1978408839531315
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 57,
+                "iso2": "CO",
+                "iso3": "COL",
+                "name": "Colombia"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 13318747,
+                    "prevalence": 0.26825980852746034
+                },
+                "marketAccess": {
+                    "people": 17375157,
+                    "prevalence": 0.43367170564704466
+                },
+                "rcsi": {
+                    "people": 11572112,
+                    "prevalence": 0.2330799577144011
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 58,
+                "iso2": "KM",
+                "iso3": "COM",
+                "name": "Comoros"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 248760,
+                    "prevalence": 0.29887471435333923
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 59,
+                "iso2": "CG",
+                "iso3": "COG",
+                "name": "Congo"
+            },
+            "dataType": "MIXED",
+            "date": "2024-05-11",
+            "metrics": {
+                "fcs": {
+                    "people": 1500168,
+                    "prevalence": 0.2814273673223254
+                },
+                "healthAccess": {
+                    "people": 772744,
+                    "prevalence": 0.5865167079727304
+                },
+                "livelihoodCoping": {
+                    "people": 1042876,
+                    "prevalence": 0.34594399671987036
+                },
+                "marketAccess": {
+                    "people": 1542164,
+                    "prevalence": 0.5115682743306615
+                },
+                "rcsi": {
+                    "people": 1902933,
+                    "prevalence": 0.35698496727084855
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 66,
+                "iso2": "CI",
+                "iso3": "CIV",
+                "name": "Côte d'Ivoire"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-03-15",
+            "metrics": {
+                "fcs": {
+                    "people": 5136499,
+                    "prevalence": 0.17477535828534008
+                },
+                "marketAccess": {
+                    "people": 8577335,
+                    "prevalence": 0.2918537696985981
+                },
+                "rcsi": {
+                    "people": 7146630,
+                    "prevalence": 0.24317241673003834
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 68,
+                "iso2": "CD",
+                "iso3": "COD",
+                "name": "Democratic Republic of the Congo"
+            },
+            "dataType": "SURVEY",
+            "date": "2023-11-20",
+            "metrics": {
+                "fcs": {
+                    "people": 42507433,
+                    "prevalence": 0.40131258991535484
+                },
+                "healthAccess": {
+                    "people": 51667956,
+                    "prevalence": 0.7386199610402074
+                },
+                "livelihoodCoping": {
+                    "people": 67802152,
+                    "prevalence": 0.6401201600063094
+                },
+                "marketAccess": {
+                    "people": 45686286,
+                    "prevalence": 0.43132417704346526
+                },
+                "rcsi": {
+                    "people": 39049510,
+                    "prevalence": 0.36866638918990413
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 70,
+                "iso2": "DJ",
+                "iso3": "DJI",
+                "name": "Djibouti"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 279288,
+                    "prevalence": 0.29125265924164684
+                },
+                "rcsi": {
+                    "people": 194549,
+                    "prevalence": 0.20288345221707754
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 72,
+                "iso2": "DO",
+                "iso3": "DOM",
+                "name": "Dominican Republic"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 593516,
+                    "prevalence": 0.055100575941383595
+                },
+                "marketAccess": {
+                    "people": 3219136,
+                    "prevalence": 0.393038969996497
+                },
+                "rcsi": {
+                    "people": 1807569,
+                    "prevalence": 0.16781025802890864
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 73,
+                "iso2": "EC",
+                "iso3": "ECU",
+                "name": "Ecuador"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 2266168,
+                    "prevalence": 0.12997292157580587
+                },
+                "marketAccess": {
+                    "people": 4851236,
+                    "prevalence": 0.3910908005272489
+                },
+                "rcsi": {
+                    "people": 4166209,
+                    "prevalence": 0.23894712765663362
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 75,
+                "iso2": "SV",
+                "iso3": "SLV",
+                "name": "El Salvador"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 0,
+                    "prevalence": 0
+                },
+                "marketAccess": {
+                    "people": 1939768,
+                    "prevalence": 0.39860863791795964
+                },
+                "rcsi": {
+                    "people": 500319,
+                    "prevalence": 0.0779222823398983
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 90,
+                "iso2": "GM",
+                "iso3": "GMB",
+                "name": "Gambia"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 696186,
+                    "prevalence": 0.3053312112051176
+                },
+                "rcsi": {
+                    "people": 641342,
+                    "prevalence": 0.2812778907601023
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 94,
+                "iso2": "GH",
+                "iso3": "GHA",
+                "name": "Ghana"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 5146455,
+                    "prevalence": 0.17289065592496736
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 103,
+                "iso2": "GT",
+                "iso3": "GTM",
+                "name": "Guatemala"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 4463349,
+                    "prevalence": 0.25877776335827907
+                },
+                "marketAccess": {
+                    "people": 4671180,
+                    "prevalence": 0.346507720054102
+                },
+                "rcsi": {
+                    "people": 3852468,
+                    "prevalence": 0.22335986114873263
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 105,
+                "iso2": "GW",
+                "iso3": "GNB",
+                "name": "Guinea-Bissau"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 681678,
+                    "prevalence": 0.36369543992189124
+                },
+                "rcsi": {
+                    "people": 694730,
+                    "prevalence": 0.37065906920413383
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 106,
+                "iso2": "GN",
+                "iso3": "GIN",
+                "name": "Guinea"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-01-11",
+            "metrics": {
+                "fcs": {
+                    "people": 6992096,
+                    "prevalence": 0.5632284987129778
+                },
+                "healthAccess": {
+                    "people": 5746383,
+                    "prevalence": 0.846450853457488
+                },
+                "livelihoodCoping": {
+                    "people": 6346611,
+                    "prevalence": 0.511233266839554
+                },
+                "marketAccess": {
+                    "people": 6067543,
+                    "prevalence": 0.4887537492000163
+                },
+                "rcsi": {
+                    "people": 4079611,
+                    "prevalence": 0.3286215344018862
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 108,
+                "iso2": "HT",
+                "iso3": "HTI",
+                "name": "Haiti"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 8229462,
+                    "prevalence": 0.6922811743740629
+                },
+                "rcsi": {
+                    "people": 7611336,
+                    "prevalence": 0.640283000837185
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 111,
+                "iso2": "HN",
+                "iso3": "HND",
+                "name": "Honduras"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 1265074,
+                    "prevalence": 0.1319500354784025
+                },
+                "marketAccess": {
+                    "people": 2731454,
+                    "prevalence": 0.31789301497934674
+                },
+                "rcsi": {
+                    "people": 2082715,
+                    "prevalence": 0.21723181263815483
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 117,
+                "iso2": "IR",
+                "iso3": "IRN",
+                "name": "Iran  (Islamic Republic of)"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 13602682,
+                    "prevalence": 0.1662914111723937
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 118,
+                "iso2": "IQ",
+                "iso3": "IRQ",
+                "name": "Iraq"
+            },
+            "dataType": "SURVEY",
+            "date": "2023-05-07",
+            "metrics": {
+                "fcs": {
+                    "people": 1176535,
+                    "prevalence": 0.03061215119200097
+                },
+                "healthAccess": {
+                    "people": 4347530,
+                    "prevalence": 0.23484203553936653
+                },
+                "marketAccess": {
+                    "people": 274525,
+                    "prevalence": 0.007142838514022077
+                },
+                "rcsi": {
+                    "people": 2470468,
+                    "prevalence": 0.06427885857779551
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 130,
+                "iso2": "JO",
+                "iso3": "JOR",
+                "name": "Jordan"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 1280101,
+                    "prevalence": 0.12857569160982243
+                },
+                "rcsi": {
+                    "people": 1984847,
+                    "prevalence": 0.1993616720592213
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 133,
+                "iso2": "KE",
+                "iso3": "KEN",
+                "name": "Kenya"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-01-16",
+            "metrics": {
+                "fcs": {
+                    "people": 13611711,
+                    "prevalence": 0.2648553035686235
+                },
+                "healthAccess": {
+                    "people": 14770843,
+                    "prevalence": 0.47947942336291405
+                },
+                "marketAccess": {
+                    "people": 22666271,
+                    "prevalence": 0.44103802133866105
+                },
+                "rcsi": {
+                    "people": 17488455,
+                    "prevalence": 0.34028859839671965
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 138,
+                "iso2": "KG",
+                "iso3": "KGZ",
+                "name": "Kyrgyzstan"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 2285685,
+                    "prevalence": 0.34675718387687604
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 139,
+                "iso2": "LA",
+                "iso3": "LAO",
+                "name": "Lao People's Democratic Republic"
+            },
+            "dataType": "SURVEY",
+            "date": "2023-07-26",
+            "metrics": {
+                "fcs": {
+                    "people": 692214,
+                    "prevalence": 0.09802640700414286
+                },
+                "healthAccess": {
+                    "people": 614039,
+                    "prevalence": 0.08695583395445398
+                },
+                "livelihoodCoping": {
+                    "people": 1246672,
+                    "prevalence": 0.17654480243456885
+                },
+                "marketAccess": {
+                    "people": 1379270,
+                    "prevalence": 0.19532239499703924
+                },
+                "rcsi": {
+                    "people": 412587,
+                    "prevalence": 0.05842762741429552
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 141,
+                "iso2": "LB",
+                "iso3": "LBN",
+                "name": "Lebanon"
+            },
+            "dataType": "PREDICTION",
+            "date": "2023-10-30",
+            "metrics": {
+                "fcs": {
+                    "people": 1263540,
+                    "prevalence": 0.22666362425006942
+                },
+                "livelihoodCoping": {
+                    "people": 2725248,
+                    "prevalence": 0.48887617162264885
+                },
+                "marketAccess": {
+                    "people": 775024,
+                    "prevalence": 0.13902982788102142
+                },
+                "rcsi": {
+                    "people": 2148507,
+                    "prevalence": 0.3854158818451683
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 142,
+                "iso2": "LS",
+                "iso3": "LSO",
+                "name": "Lesotho"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 740978,
+                    "prevalence": 0.3514857473278463
+                },
+                "rcsi": {
+                    "people": 574303,
+                    "prevalence": 0.2724228238188234
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 144,
+                "iso2": "LR",
+                "iso3": "LBR",
+                "name": "Liberia"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 1944143,
+                    "prevalence": 0.42557271876747094
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 145,
+                "iso2": "LY",
+                "iso3": "LBY",
+                "name": "Libya"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 1199237,
+                    "prevalence": 0.17956501746557305
+                },
+                "rcsi": {
+                    "people": 1744665,
+                    "prevalence": 0.2612334352563956
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 150,
+                "iso2": "MG",
+                "iso3": "MDG",
+                "name": "Madagascar"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-03-04",
+            "metrics": {
+                "fcs": {
+                    "people": 8456947,
+                    "prevalence": 0.32215332807656305
+                },
+                "healthAccess": {
+                    "people": 2155430,
+                    "prevalence": 0.08210751797908643
+                },
+                "livelihoodCoping": {
+                    "people": 9423618,
+                    "prevalence": 0.3589770795969369
+                },
+                "marketAccess": {
+                    "people": 3180077,
+                    "prevalence": 0.12113974014886676
+                },
+                "rcsi": {
+                    "people": 7816509,
+                    "prevalence": 0.2977569119407755
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 152,
+                "iso2": "MW",
+                "iso3": "MWI",
+                "name": "Malawi"
+            },
+            "dataType": "SURVEY",
+            "date": "2023-12-30",
+            "metrics": {
+                "fcs": {
+                    "people": 6794550,
+                    "prevalence": 0.37449363536366786
+                },
+                "healthAccess": {
+                    "people": 4601203,
+                    "prevalence": 0.25360343783123457
+                },
+                "marketAccess": {
+                    "people": 11634958,
+                    "prevalence": 0.6412812796614331
+                },
+                "rcsi": {
+                    "people": 9499484,
+                    "prevalence": 0.5235808548379212
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 155,
+                "iso2": "ML",
+                "iso3": "MLI",
+                "name": "Mali"
+            },
+            "dataType": "SURVEY",
+            "date": "2023-11-13",
+            "metrics": {
+                "fcs": {
+                    "people": 13212645,
+                    "prevalence": 0.6925706293729753
+                },
+                "healthAccess": {
+                    "people": 6609008,
+                    "prevalence": 0.5116867895041118
+                },
+                "livelihoodCoping": {
+                    "people": 5357964,
+                    "prevalence": 0.280849823628162
+                },
+                "marketAccess": {
+                    "people": 4914175,
+                    "prevalence": 0.25758752713763106
+                },
+                "rcsi": {
+                    "people": 4809417,
+                    "prevalence": 0.25209647182756817
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 159,
+                "iso2": "MR",
+                "iso3": "MRT",
+                "name": "Mauritania"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-03-18",
+            "metrics": {
+                "fcs": {
+                    "people": 1499498,
+                    "prevalence": 0.3405381259000313
+                },
+                "healthAccess": {
+                    "people": 1180164,
+                    "prevalence": 0.6696657738614262
+                },
+                "marketAccess": {
+                    "people": 2296737,
+                    "prevalence": 0.521592235311591
+                },
+                "rcsi": {
+                    "people": 132765,
+                    "prevalence": 0.030151117231284465
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 165,
+                "iso2": "MD",
+                "iso3": "MDA",
+                "name": "Moldova, Republic of"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 655007,
+                    "prevalence": 0.18472318891424538
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 167,
+                "iso2": "MN",
+                "iso3": "MNG",
+                "name": "Mongolia"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 570713,
+                    "prevalence": 0.18002394797057353
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 169,
+                "iso2": "MA",
+                "iso3": "MAR",
+                "name": "Morocco"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 6309895,
+                    "prevalence": 0.17513310545666938
+                },
+                "rcsi": {
+                    "people": 10053902,
+                    "prevalence": 0.2790491884915707
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 170,
+                "iso2": "MZ",
+                "iso3": "MOZ",
+                "name": "Mozambique"
+            },
+            "dataType": "SURVEY",
+            "date": "2023-12-25",
+            "metrics": {
+                "fcs": {
+                    "people": 7566003,
+                    "prevalence": 0.2565098067667572
+                },
+                "healthAccess": {
+                    "people": 8628161,
+                    "prevalence": 0.3159915295189167
+                },
+                "livelihoodCoping": {
+                    "people": 14506837,
+                    "prevalence": 0.491824450253121
+                },
+                "marketAccess": {
+                    "people": 10355922,
+                    "prevalence": 0.3510962857286218
+                },
+                "rcsi": {
+                    "people": 7228938,
+                    "prevalence": 0.2450823095773116
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 172,
+                "iso2": "NA",
+                "iso3": "NAM",
+                "name": "Namibia"
+            },
+            "dataType": "SURVEY",
+            "date": "2023-12-25",
+            "metrics": {
+                "fcs": {
+                    "people": 174779,
+                    "prevalence": 0.07599110676319393
+                },
+                "healthAccess": {
+                    "people": 828245,
+                    "prevalence": 0.5954685620548151
+                },
+                "marketAccess": {
+                    "people": 1692129,
+                    "prevalence": 0.7357104999884783
+                },
+                "rcsi": {
+                    "people": 656143,
+                    "prevalence": 0.28528045606217534
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 175,
+                "iso2": "NP",
+                "iso3": "NPL",
+                "name": "Nepal"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 7235868,
+                    "prevalence": 0.257615395627529
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 181,
+                "iso2": "NE",
+                "iso3": "NER",
+                "name": "Niger"
+            },
+            "dataType": "SURVEY",
+            "date": "2023-12-13",
+            "metrics": {
+                "fcs": {
+                    "people": 21418970,
+                    "prevalence": 0.8276337716783242
+                },
+                "livelihoodCoping": {
+                    "people": 9093923,
+                    "prevalence": 0.3513913138465939
+                },
+                "rcsi": {
+                    "people": 3711064,
+                    "prevalence": 0.1433963395653315
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 182,
+                "iso2": "NG",
+                "iso3": "NGA",
+                "name": "Nigeria"
+            },
+            "dataType": "MIXED",
+            "date": "2024-02-22",
+            "metrics": {
+                "fcs": {
+                    "people": 100436832,
+                    "prevalence": 0.4953520026429865
+                },
+                "healthAccess": {
+                    "people": 40728441,
+                    "prevalence": 0.6752294362579636
+                },
+                "livelihoodCoping": {
+                    "people": 84356420,
+                    "prevalence": 0.2634425703999743
+                },
+                "marketAccess": {
+                    "people": 44758728,
+                    "prevalence": 0.27956033403562475
+                },
+                "rcsi": {
+                    "people": 43752135,
+                    "prevalence": 0.21578446041820765
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 195,
+                "iso2": "PE",
+                "iso3": "PER",
+                "name": "Peru"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 5052411,
+                    "prevalence": 0.1579408625232883
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 205,
+                "iso2": "RW",
+                "iso3": "RWA",
+                "name": "Rwanda"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 2741510,
+                    "prevalence": 0.22285186099524637
+                },
+                "rcsi": {
+                    "people": 2364048,
+                    "prevalence": 0.1921687304741147
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 214,
+                "iso2": "ST",
+                "iso3": "STP",
+                "name": "Sao Tome and Principe"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 41751,
+                    "prevalence": 0.19784578349792445
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 221,
+                "iso2": "SL",
+                "iso3": "SLE",
+                "name": "Sierra Leone"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-03-11",
+            "metrics": {
+                "fcs": {
+                    "people": 4690536,
+                    "prevalence": 0.5705066907071066
+                },
+                "healthAccess": {
+                    "people": 3926952,
+                    "prevalence": 0.9999991278424047
+                },
+                "marketAccess": {
+                    "people": 4616619,
+                    "prevalence": 0.5615162164719665
+                },
+                "rcsi": {
+                    "people": 3645199,
+                    "prevalence": 0.4433630652144775
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 225,
+                "iso2": "SB",
+                "iso3": "SLB",
+                "name": "Solomon Islands"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 154653,
+                    "prevalence": 0.23688575940593604
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 226,
+                "iso2": "SO",
+                "iso3": "SOM",
+                "name": "Somalia"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-03-17",
+            "metrics": {
+                "fcs": {
+                    "people": 15615302,
+                    "prevalence": 0.9530406033428526
+                },
+                "healthAccess": {
+                    "people": 5500544,
+                    "prevalence": 0.33571183233597995
+                },
+                "livelihoodCoping": {
+                    "people": 7364168,
+                    "prevalence": 0.4494534886051847
+                },
+                "marketAccess": {
+                    "people": 6642673,
+                    "prevalence": 0.40541885677468337
+                },
+                "rcsi": {
+                    "people": 3443866,
+                    "prevalence": 0.2101876974111164
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 231,
+                "iso2": "LK",
+                "iso3": "LKA",
+                "name": "Sri Lanka"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 4332270,
+                    "prevalence": 0.19992017535395365
+                },
+                "rcsi": {
+                    "people": 5027730,
+                    "prevalence": 0.23201339326319304
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 235,
+                "iso2": "SZ",
+                "iso3": "SWZ",
+                "name": "Eswatini"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 204617,
+                    "prevalence": 0.18009031932131128
+                },
+                "rcsi": {
+                    "people": 335439,
+                    "prevalence": 0.29523117151957723
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 238,
+                "iso2": "SY",
+                "iso3": "SYR",
+                "name": "Syrian Arab Republic"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 10501085,
+                    "prevalence": 0.5844552415877196
+                },
+                "livelihoodCoping": {
+                    "people": 4939385,
+                    "prevalence": 0.2749097171142935
+                },
+                "marketAccess": {
+                    "people": 11652205,
+                    "prevalence": 0.6485227277280999
+                },
+                "rcsi": {
+                    "people": 10270903,
+                    "prevalence": 0.57164408193906
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 239,
+                "iso2": "TJ",
+                "iso3": "TJK",
+                "name": "Tajikistan"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 2240568,
+                    "prevalence": 0.24619361933413378
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 242,
+                "iso2": "TL",
+                "iso3": "TLS",
+                "name": "Timor-Leste"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 381362,
+                    "prevalence": 0.3007653165842779
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 243,
+                "iso2": "TG",
+                "iso3": "TGO",
+                "name": "Togo"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 1880056,
+                    "prevalence": 0.2383107314590584
+                },
+                "rcsi": {
+                    "people": 1825282,
+                    "prevalence": 0.2313677297586098
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 248,
+                "iso2": "TN",
+                "iso3": "TUN",
+                "name": "Tunisia"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 1710203,
+                    "prevalence": 0.1478749050708241
+                },
+                "rcsi": {
+                    "people": 2005129,
+                    "prevalence": 0.17337606151419244
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 253,
+                "iso2": "UG",
+                "iso3": "UGA",
+                "name": "Uganda"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 7968478,
+                    "prevalence": 0.18651432955268912
+                },
+                "rcsi": {
+                    "people": 13460410,
+                    "prevalence": 0.3150613387718847
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 254,
+                "iso2": "UA",
+                "iso3": "UKR",
+                "name": "Ukraine"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 1892941,
+                    "prevalence": 0.1483628631398103
+                },
+                "livelihoodCoping": {
+                    "people": 4805804,
+                    "prevalence": 0.3766642116583222
+                },
+                "rcsi": {
+                    "people": 1874505,
+                    "prevalence": 0.14691790990910583
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 257,
+                "iso2": "TZ",
+                "iso3": "TZA",
+                "name": "United Republic of Tanzania"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-02-16",
+            "metrics": {
+                "fcs": {
+                    "people": 5202349,
+                    "prevalence": 0.09237398464370855
+                },
+                "healthAccess": {
+                    "people": 56318333,
+                    "prevalence": 1
+                },
+                "livelihoodCoping": {
+                    "people": 17877370,
+                    "prevalence": 0.3174342810150588
+                },
+                "marketAccess": {
+                    "people": 13336464,
+                    "prevalence": 0.23680502048950916
+                },
+                "rcsi": {
+                    "people": 7302320,
+                    "prevalence": 0.12966150241343544
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 261,
+                "iso2": "UZ",
+                "iso3": "UZB",
+                "name": "Uzbekistan"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 6195434,
+                    "prevalence": 0.18799449025079412
+                },
+                "rcsi": {
+                    "people": 5405849,
+                    "prevalence": 0.16403529230200256
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 264,
+                "iso2": "VN",
+                "iso3": "VNM",
+                "name": "Viet Nam"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 16917651,
+                    "prevalence": 0.17707327508802373
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 269,
+                "iso2": "YE",
+                "iso3": "YEM",
+                "name": "Yemen"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-05-07",
+            "metrics": {
+                "fcs": {
+                    "people": 15245100,
+                    "prevalence": 0.5074644214683903
+                },
+                "rcsi": {
+                    "people": 15335622,
+                    "prevalence": 0.5104776319006054
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 270,
+                "iso2": "ZM",
+                "iso3": "ZMB",
+                "name": "Zambia"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-01-19",
+            "metrics": {
+                "fcs": {
+                    "people": 3325604,
+                    "prevalence": 0.19165740346716448
+                },
+                "healthAccess": {
+                    "people": 5110046,
+                    "prevalence": 0.2944963224598509
+                },
+                "marketAccess": {
+                    "people": 8158240,
+                    "prevalence": 0.47016635031169074
+                },
+                "rcsi": {
+                    "people": 2570107,
+                    "prevalence": 0.14811746505380186
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 271,
+                "iso2": "ZW",
+                "iso3": "ZWE",
+                "name": "Zimbabwe"
+            },
+            "dataType": "SURVEY",
+            "date": "2024-03-19",
+            "metrics": {
+                "fcs": {
+                    "people": 5474103,
+                    "prevalence": 0.3606371021397421
+                },
+                "marketAccess": {
+                    "people": 5086119,
+                    "prevalence": 0.33507648966376463
+                },
+                "rcsi": {
+                    "people": 7849108,
+                    "prevalence": 0.5171038183793522
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 272,
+                "iso2": "ID",
+                "iso3": "IDN",
+                "name": "Indonesia"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 55342354,
+                    "prevalence": 0.2067609795114525
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 273,
+                "iso2": "MM",
+                "iso3": "MMR",
+                "name": "Myanmar"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 13233987,
+                    "prevalence": 0.24640443553741578
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 274,
+                "iso2": "PG",
+                "iso3": "PNG",
+                "name": "Papua New Guinea"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 1705743,
+                    "prevalence": 0.19819662696598325
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 275,
+                "iso2": "PH",
+                "iso3": "PHL",
+                "name": "Philippines"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 22170945,
+                    "prevalence": 0.20788134702233815
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 276,
+                "iso2": "FJ",
+                "iso3": "FJI",
+                "name": "Fiji"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 137449,
+                    "prevalence": 0.15557628160360754
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 277,
+                "iso2": "VU",
+                "iso3": "VUT",
+                "name": "Vanuatu"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 109788,
+                    "prevalence": 0.3751127511275113
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 278,
+                "iso2": "SN",
+                "iso3": "SEN",
+                "name": "Senegal"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 4890629,
+                    "prevalence": 0.3084721805232126
+                },
+                "rcsi": {
+                    "people": 4109531,
+                    "prevalence": 0.2592051019404127
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 40765,
+                "iso2": "EG",
+                "iso3": "EGY",
+                "name": "Egypt"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 24781794,
+                    "prevalence": 0.2517871197087015
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 70001,
+                "iso2": "SS",
+                "iso3": "SSD",
+                "name": "South Sudan"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 3513351,
+                    "prevalence": 0.32009623611540206
+                },
+                "rcsi": {
+                    "people": 3542831,
+                    "prevalence": 0.32278211550538677
+                }
+            }
+        },
+        {
+            "country": {
+                "id": 147299,
+                "iso2": "CU",
+                "iso3": "CUB",
+                "name": "Cuba"
+            },
+            "dataType": "PREDICTION",
+            "date": "2024-05-16",
+            "metrics": {
+                "fcs": {
+                    "people": 1968829,
+                    "prevalence": 0.17364657462745872
+                }
+            }
+        }
+    ]
+}
