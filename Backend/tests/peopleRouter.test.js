@@ -56,7 +56,7 @@ describe('POST /', () => {
 
 
   describe('POST /', () => {
-    it('POST/ addUser', async () => {
+    it('POST/ addUser adds user object to JSON', async () => {
       const { default: app } = await import('../server.js');
       const pathToFile = path.resolve('../backend/data/users.json');
       
