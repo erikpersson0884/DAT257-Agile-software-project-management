@@ -17,7 +17,7 @@ donationsRouter.post('/addDonation', (req, res) => {
     const donationData = req.body;
     const newDonation = {
         amount: donationData.donationAmount,
-        date: Date.now(),
+        date: new Date(),
         user : {}
     }
     if (donationData.user.type === "anonymous") {

@@ -42,5 +42,23 @@
       "type": "registered",
       "userId": "1"
     }
+  },
+  {
+    "amount": "40",
+    "date": 1715688591277,
+    "user": {
+      "type": "guest",
+      "firstname": "John",
+      "lastname": "Smith"
+    }
+  },
+  {
+    "amount": "10",
+    "date": "2024-05-14T12:15:59.616Z",
+    "user": {
+      "type": "guest",
+      "firstname": "Test",
+      "lastname": "test"
+    }
   }
 ]
