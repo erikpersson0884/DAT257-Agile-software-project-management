@@ -3,6 +3,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import DonationBox from "./Components/DonationBox/DonationBox";
+import RandomCountryAPI from "./Components/RandomCountryAPI/RandomCountryAPI.tsx";
+import CountryStatisticsAPI from "./Components/CountryStatisticsAPI/CountryStatisticsAPI.tsx";
 import InformationPage from "./Components/InformationPage/InformationPage";
 import Footer from "./Components/Footer/Footer.tsx";
 import Header from "./Components/Header/Header.tsx";
@@ -17,13 +19,15 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      
+
       <Routes>
         <Route path="/information" element={<InformationPage />}></Route>
         <Route path="/about" element={<AboutPage></AboutPage>}> </Route>
-        <Route path="/profile" element={<ProfilePageFetcher />}></Route>
+        <Route path="/" element={<> 
+              <WebsiteFeature/>
+              <RandomCountryAPI/>
+              </>}></Route>
         <Route path="/donate" element={<DonationBox/>}></Route>
-        <Route path="/" element={<WebsiteFeature/>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
         <Route path="/profile" element={<ProfilePageFetcher />}></Route>
         <Route path="/top_donations" element={<TopDonations/>}></Route>
