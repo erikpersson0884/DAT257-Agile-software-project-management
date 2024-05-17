@@ -8,9 +8,9 @@ function WebsiteFeature () {
                     <h1 className="featureImageH1">
                         10% of people are suffering <br></br> from starvation
                     </h1>
-                    <h4>
+                    <h2>
                         Act now!
-                    </h4>
+                    </h2>
                     <Link to="/Donate">
                         <button className= "btnFeature">
                             Donate Here!

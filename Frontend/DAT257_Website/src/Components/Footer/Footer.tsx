@@ -11,7 +11,7 @@ function Footer() {
             <img src='src/assets/goal-logo.png'></img>
             <div>
                 <h2>Sitemap</h2>
-                <ul>
+                <ul className='links'>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
@@ -23,7 +23,7 @@ function Footer() {
 
             <div>
                 <h2>Socials</h2>
-                <ul>
+                <ul className='links'>
                     <li>
                         <a href='https://www.facebook.com/'>Facebook</a>
                     </li>
@@ -41,7 +41,7 @@ function Footer() {
 
             <div>
                 <h2>Contact</h2>
-                <ul>
+                <ul className='links'>
                     <li>
                         <a href="mailto:HungerZero@gmail.com">HungerZero@gmail.com</a>
                     </li>
