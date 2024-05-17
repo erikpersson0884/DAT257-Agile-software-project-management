@@ -3,8 +3,8 @@ import React, { useState, useEffect, } from "react";
 
 function RandomCountryAPI() {
   const url = "https://api.hungermapdata.org/v1/foodsecurity/country";
-  const [countryData, setCountry] = useState({});
-  const [metricsData, setMetrics] = useState({});
+  const [countryData, setCountry] = useState(null);
+  const [metricsData, setMetrics] = useState(null);
   const [loading, setLoading] = useState(false);
   const randomInt = Math.round(Math.random() * 83)
 
@@ -23,7 +23,7 @@ function RandomCountryAPI() {
         setLoading(false);
     });
   }, []);
-  if(loading) {
+  if(loading || !metricsData || !countryData) {
     return(
     <div className="mainDivRandom-API">
       <div className="countryInfoRandom-API">
