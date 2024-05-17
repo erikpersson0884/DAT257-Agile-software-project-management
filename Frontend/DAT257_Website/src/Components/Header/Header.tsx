@@ -4,6 +4,10 @@ import UserLogo from "./UserLogo";
 import { useState } from "react";
 import LoginForm from "../LoginForm/LoginForm";
 
+function capitalizeWords(str) {
+    return str.replace(/_/g, ' ')
+              .replace(/\b\w/g, (char) => char.toUpperCase());
+}
 
 function Header(){
 
@@ -29,7 +33,7 @@ function Header(){
 
                         {navList.map((item) => 
                             <li className="divNavItemA">
-                                <Link to={"/"+item} >{item}</Link>
+                                <Link to={"/"+item} >{capitalizeWords(item)}</Link>
                             </li>
                         )}
                         <div className="userLogo">
