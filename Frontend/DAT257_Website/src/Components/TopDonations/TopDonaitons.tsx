@@ -23,8 +23,7 @@ function TopDonations() {
 
     useEffect(() => {
         const sortBy = isRecentSelected ? 'date' : 'amount';
-        // fetch('/api/donations?sortBy=${sortBy}')
-        fetch('/api/donations/getLeaderboard')
+        fetch(`/api/donations/getLeaderboard?sortBy=${sortBy}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -43,67 +42,6 @@ function TopDonations() {
                 console.error('Error fetching data:', error);
             });
     }, [isRecentSelected]);
-
-
-    // setLeaderboardData([
-    //     {
-    //         "amount": "039458345",
-    //         "date": 1715288661482,
-    //         "user": {
-    //           "type": "anonymous"
-    //         }
-    //       },
-    //       {
-    //         "amount": "44",
-    //         "date": 1715288671261,
-    //         "user": {
-    //           "type": "registered",
-    //           "userId": "1"
-    //         }
-    //       }
-    // ])
-    
-    // const leaderboardData = [
-    //     {
-    //       "amount": "456",
-    //       "date": 1715288522470,
-    //       "user": {
-    //         "type": "registered",
-    //         "userId": "1"
-    //       }
-    //     },
-    //     {
-    //       "amount": "600",
-    //       "date": 1715288633924,
-    //       "user": {
-    //         "type": "guest",
-    //         "firstname": "Erik",
-    //         "lastname": "Persson"
-    //       }
-    //     },
-    //     {
-    //       "amount": "9347859384759",
-    //       "date": 1715288651033,
-    //       "user": {
-    //         "type": "anonymous"
-    //       }
-    //     },
-    //     {
-    //       "amount": "039458345",
-    //       "date": 1715288661482,
-    //       "user": {
-    //         "type": "anonymous"
-    //       }
-    //     },
-    //     {
-    //       "amount": "44",
-    //       "date": 1715288671261,
-    //       "user": {
-    //         "type": "registered",
-    //         "userId": "1"
-    //       }
-    //     }
-    //   ]
     
     
     const handleRecentClick = () => {
@@ -134,16 +72,35 @@ function TopDonations() {
                         </div>
                     </div>
                     <div className="rowTopDonations">
-                        {leaderboardData.map((item, index) => (
+                    {leaderboardData.map((item, index) => {
+                        let name = '';
+
+                        switch (item.user.type) {
+                            case 'registered':
+                                name = `${item.user.firstname} ${item.user.lastname}`;
+                                break;
+                            case 'guest':
+                                name = `${item.user.firstname} ${item.user.lastname}`;
+                                break;
+                            case 'anonymous':
+                                name = 'Anonymous';
+                                break;
+                            default:
+                                name = 'Unknown';
+                        }
+
+                        return (
                             <LeaderboardCard
                                 key={index}
                                 image={image}
                                 position={index + 1}
-                                name={item.user.type}
+                                name={name}
                                 donationAmount={parseInt(item.amount)}
                                 date={item.date}
                             />
-                        ))}
+                        );
+                    })}
+
                         
                     
                     </div>

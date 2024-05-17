@@ -26,7 +26,7 @@ function App() {
         <Route path="/" element={<WebsiteFeature/>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
         <Route path="/profile" element={<ProfilePageFetcher />}></Route>
-        <Route path="/leaderboard" element={<TopDonations/>}></Route>
+        <Route path="/top_donations" element={<TopDonations/>}></Route>
       </Routes>
 
       <Footer />
