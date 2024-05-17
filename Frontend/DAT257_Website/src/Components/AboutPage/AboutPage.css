@@ -12,7 +12,9 @@
     padding: 40px;
     height: min-content;
     border-radius: 5px;
-    background-color: rgba(224, 224, 224, 0.986);   
+    background-color: #6c5327;  
+    color: white; 
+    text-shadow: 0pt 2pt 3pt rgba(0, 0, 0, 0.5);
 }
 
 .AboutTitle {
@@ -20,9 +22,9 @@
 }
 
 .Left {
-    margin-right: 65vh;
+    margin-right: 50vh;
 }
 
 .Right {
-    margin-left: 65vh;
+    margin-left: 50vh;
 }

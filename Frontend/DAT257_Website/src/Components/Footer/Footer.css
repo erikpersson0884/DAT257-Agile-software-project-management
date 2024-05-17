@@ -1,7 +1,8 @@
 
 
 footer {
-    background-color: grey;
+    background-color: #6c5327;
+    color: aliceblue;
 
     text-align: center;
 
@@ -21,7 +22,10 @@ footer img {
     width: 12%;
 }
 
+.links a {
+    color: aliceblue;
+}
 
-footer a {
-    color: white;
+.links :hover {
+    color: rgb(55 65 81);
 }

@@ -19,13 +19,8 @@ function ProfilePageFetcher() {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        var adminKey = localStorage.getItem("adminKey");
-        var response = null;
-        if (adminKey) {
-          response = await axios.post("/api/people/getUser", { adminKey });
-          setUserProfile(response.data);
-          console.log("Profile was successfully fetched");
-        }
+        const response = await axios.post('/api/people/getUser', {adminKey: localStorage.getItem("adminKey")});
+        setUserProfile(response.data);
       } catch (error) {
         console.error("Error fetching user profile:", error);
       }

@@ -1,10 +1,11 @@
 import "./RandomCountryAPI.css";
 import React, { useState, useEffect, } from "react";
+import {Link} from "react-router-dom";
 
 function RandomCountryAPI() {
   const url = "https://api.hungermapdata.org/v1/foodsecurity/country";
-  const [countryData, setCountry] = useState({});
-  const [metricsData, setMetrics] = useState({});
+  const [countryData, setCountry] = useState(null);
+  const [metricsData, setMetrics] = useState(null);
   const [loading, setLoading] = useState(false);
   const randomInt = Math.round(Math.random() * 83)
 
@@ -23,7 +24,7 @@ function RandomCountryAPI() {
         setLoading(false);
     });
   }, []);
-  if(loading) {
+  if(loading || !metricsData || !countryData) {
     return(
     <div className="mainDivRandom-API">
       <div className="countryInfoRandom-API">
@@ -40,7 +41,7 @@ function RandomCountryAPI() {
           <p className="amountStarvingRandom-API">There are {Intl.NumberFormat('fr-FR').format(metricsData.people)} people starving</p>
           <p className="percentageStarvingRandom-API">That represents {Math.round(metricsData.prevalence * 100)}% of the country´s population</p>
           <div className="buttonDivRandom-API">
-            <a href="/statistics"><button className="buttonRandom-API">See more statistics &gt;&gt;</button></a>
+            <Link to="/statistics"><button className="buttonRandom-API">See more statistics &gt;&gt;</button></Link>
           </div>
         </div>
     </div>

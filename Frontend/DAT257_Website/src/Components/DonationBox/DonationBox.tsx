@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./DonationBox.css";
+import axios from "axios";
 
 function DonationBox() {
 
@@ -14,24 +15,38 @@ function DonationBox() {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+
+    let userType, userInfo;
+    if (isAnonymous) {
+      userType = "anonymous";
+      userInfo = null;
+    } else if (localStorage.getItem("adminKey")) {
+      userType = "registered";
+      userInfo = {
+        adminKey: localStorage.getItem("adminKey"),
+      }
+    } else {
+      userType = "guest";
+      userInfo = {
+        firstname: firstName,
+        lastname: lastName,
+      }
+    }
+
     const donationData = {
-      firstName,
-      lastName,
-      isAnonymous,
-      email,
-      donationAmount,
-      cardNumber,
-      cvcNumber,
-      expDate,
+      donationAmount: donationAmount,
+      user: {
+        type: userType,
+        info: userInfo
+      }
     };
-    console.log(donationData);
+
+    axios.post('/api/donations/addDonation', donationData)
+
     setFirstName("");
     setLastName("");
     setEmail("");
     setDonationAmount("");
-    setCardNumber("");
-    setCvcNumber("");
-    setExpDate("");
   };
 
   return (
