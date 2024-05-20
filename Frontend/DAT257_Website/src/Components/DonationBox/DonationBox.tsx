@@ -16,13 +16,13 @@ function DonationBox() {
   let componentToDisplay;
 
   switch (showComponent) {
-    case 'A':
+    case 'Kort':
       componentToDisplay = <KortBetal />;
       break;
-    case 'B':
+    case 'Klarna':
       componentToDisplay = <KlarnaBetal />;
       break;
-    case 'C':
+    case 'Swish':
       componentToDisplay = <SwishBetal />;
       break;
     default:
@@ -34,9 +34,9 @@ function DonationBox() {
         <div className="donate rounded">
           <h2 className="mb-3"> Donate </h2>
           <div className = "paymentButtons">
-            <button className="btn btn-primary btn-lg" id="kort" onClick={() => handleClick('A')}> Kort</button>
-            <button className="btn btn-primary btn-lg" id="klarna" onClick={() => handleClick('B')}> Klarna </button>
-            <button className="btn btn-primary btn-lg" id="swish" onClick={() => handleClick('C')}> Swish </button>
+            <button className="btn btn-primary btn-lg" id="kort" onClick={() => handleClick('Kort')}> Kort</button>
+            <button className="btn btn-primary btn-lg" id="klarna" onClick={() => handleClick('Klarna')}> Klarna </button>
+            <button className="btn btn-primary btn-lg" id="swish" onClick={() => handleClick('Swish')}> Swish </button>
           </div>
           {componentToDisplay}
         </div>
